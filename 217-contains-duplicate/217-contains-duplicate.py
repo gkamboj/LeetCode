@@ -5,4 +5,8 @@ class Solution:
             if num in numsDict: return True
             numsDict[num] = 1
         return False
+    
+    #Other approaches:
+    #1. Sort nums -> no extra space but O(n lg n)
+    #2. Use set instead of dictionary: same space and memory
         

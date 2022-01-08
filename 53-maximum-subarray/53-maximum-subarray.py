@@ -7,4 +7,5 @@ class Solution:
             maxSum = max(maxSum, currSum)
             if(currSum < 0): currSum = 0
         return maxSum
-        
+#This approach is Kadane's algorithm
+#See Java solution for divide and conquer

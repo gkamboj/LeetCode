@@ -4,10 +4,10 @@ class Solution:
         nums.sort()
         if nums[0] > 0 or nums[-1] < 0: return []
         result = []
-        prev = ''
+        prev = nums[0]
         for (ind, num) in enumerate(nums[:-2]):
-            if(num != prev):
-                result += self.twoSum(nums[ind + 1:], num)
+            if(ind > 0 and num == prev): continue
+            result += self.twoSum(nums[ind + 1:], num)
             prev = num
         return result
         

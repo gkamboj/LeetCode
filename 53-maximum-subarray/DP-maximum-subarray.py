@@ -8,4 +8,4 @@ class Solution:
             maxSum = max(maxSum, dp[-1])
         return maxSum
 #This approach is using DP
-#Refer other submissions for alternative approaches
+#Refer other submissions for more approaches

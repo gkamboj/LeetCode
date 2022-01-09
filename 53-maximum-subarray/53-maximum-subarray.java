@@ -1,40 +1,35 @@
 class Solution {
     public int maxSubArray(int[] nums) {    
-    return helper(nums,0,nums.length-1);
+        int length = nums.length;
+        return getMaxSubArraySum(nums, 0, length - 1);
     }
     
-    public int helper(int nums[],int i,int j){
-
-        if(i==j){
-            return nums[i];
-        }
-                          
-        int mid  =  (i+j)/2;
-        int sum = 0,leftMax = Integer.MIN_VALUE;
-        
-        for(int l =  mid;l>=i;l--){
-            sum+=nums[l];
-            if(sum>leftMax){
-                leftMax =  sum;
-            }                                    
+    public int getMaxSubArraySum(int[] nums, int start, int end) {
+        if(start == end) {
+            return nums[start];
         }
         
-     int rightMax = Integer.MIN_VALUE;
-        sum = 0;    // reset sum to 0
-        for (int l = mid + 1; l <=j; l++)
-        {
-            sum += nums[l];
-            if (sum > rightMax) {
-                rightMax = sum;
+        int mid = (start + end) / 2;
+        
+        int midLeftMax = Integer.MIN_VALUE;
+        int midRightMax = Integer.MIN_VALUE;
+        
+        int sum = 0;
+        for(int i = mid; i >= start; i--) {
+            sum += nums[i];
+            if(midLeftMax < sum) {
+                midLeftMax = sum;
             }
         }
         
-       int maxLeftRight = Math.max(helper(nums, i, mid),
-                                    helper(nums, mid + 1, j ));
-        return Math.max(maxLeftRight, leftMax + rightMax);
+        sum = 0;
+        for(int i = mid + 1; i <= end; i++) {
+            sum += nums[i];
+            if(midRightMax < sum) { 
+                midRightMax = sum;
+            }
+        }
+        return Math.max(Math.max(getMaxSubArraySum(nums, start, mid), getMaxSubArraySum(nums, mid + 1, end)), midRightMax + midLeftMax);
         
-        
-    
     }
-
 }

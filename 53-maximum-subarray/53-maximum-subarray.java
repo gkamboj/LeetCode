@@ -1,4 +1,7 @@
 class Solution {
+    //This is divide and conquer approach
+    //Check other submissions for more approaches
+    
     public int maxSubArray(int[] nums) {    
         int length = nums.length;
         return getMaxSubArraySum(nums, 0, length - 1);

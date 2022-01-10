@@ -8,4 +8,6 @@ class Solution:
             minEndingHere = min(minEndingHere * num, num)
             ans = max(ans, maxEndingHere)
         return ans
-            
+#Keep storing maxEndingHere & minEndingHere for every index and updating global max. If current value becomes less than 0, then swap maxEndingHere & minEndingHere (as min will now become max after multiplying with negative number)
+
+#See other submissions for more approaches

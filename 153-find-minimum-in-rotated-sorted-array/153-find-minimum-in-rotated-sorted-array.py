@@ -14,5 +14,5 @@ class Solution:
             elif nums[mid] > nums[start]:
                 start = mid + 1
             else:
-                end = mid
+                end = mid - 1
                 

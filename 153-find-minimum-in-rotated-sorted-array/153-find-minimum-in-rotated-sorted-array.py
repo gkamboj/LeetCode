@@ -7,12 +7,15 @@ class Solution:
         start, end = 0, len(nums) - 1
         while start < end:
             mid = (start + end) // 2
-            if nums[mid] > nums[end]:
+            if nums[mid] < nums[mid - 1]:
+                return nums[mid]
+            elif nums[mid] > nums[mid + 1]:
+                return nums[mid + 1]
+            elif nums[mid] > nums[start]:
                 start = mid + 1
             else:
-                end = mid
-        return nums[start]
-    
+                end = mid - 1
+
 #Approach: Binary search.
 
 #Check other submissions for more approaches.

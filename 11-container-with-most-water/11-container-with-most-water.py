@@ -9,8 +9,8 @@ class Solution:
                 end -= 1
             else:
                 start += 1
-            if height[end] > currEnd or height[start] > currStart:
-                currArea = (end - start) * min(height[start], height[end])
-                currStart, currEnd = height[start], height[end]
+            #if height[end] > currEnd or height[start] > currStart:
+            currArea = (end - start) * min(height[start], height[end])
+                #currStart, currEnd = height[start], height[end]
             ans = max(ans, currArea)
         return ans

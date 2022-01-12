@@ -20,3 +20,7 @@ class Solution:
         if nums[start] == target:
             return start
         return -1
+    
+#Approach:
+#Binary search with iterations.
+#Note: Focus on where to use = (i.e. <= and >=) in lines 11 and 16 

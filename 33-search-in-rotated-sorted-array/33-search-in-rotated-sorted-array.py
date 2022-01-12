@@ -3,7 +3,7 @@ class Solution:
         if len(nums) == 1:
             return 0 if nums[0] == target else -1
         start, end = 0, len(nums) - 1
-        while start < end:
+        while start <= end:
             mid = (start + end) // 2
             if nums[mid] == target:
                 return mid
@@ -17,8 +17,6 @@ class Solution:
                     end = mid - 1
                 else:
                     start = mid + 1
-        if nums[start] == target:
-            return start
         return -1
     
 #Approach:

@@ -20,5 +20,6 @@ class Solution:
         return -1
     
 #Approach:
-#Binary search with iterations.
-#Note: Focus on where to use = (i.e. <= and >=) in lines 11 and 16 
+# Binary search with iterations.
+# Note-1: Focus on where to use = (i.e. <= and >=) in lines 11 and 16 
+# Note-2: changing line-7 condition to start < end will require another check of comparing target with nums[start] after the end of while loop

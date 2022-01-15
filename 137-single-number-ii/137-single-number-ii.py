@@ -7,7 +7,7 @@ class Solution:
                 if num < 0:
                     negs += 1
                     num = abs(num)
-                if num & (1 << i) > 0:
+                if num & (1 << i) == (1 << i):
                     currBitsSet += 1 
             if currBitsSet % 3 == 1:
                 ans += 1 << i

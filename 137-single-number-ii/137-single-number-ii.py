@@ -11,7 +11,7 @@ class Solution:
                 if num & (1 << i) > 0:
                     currBitsSet += 1 
             if currBitsSet % 3 == 1:
-                ans += 1 << i
+                ans |= 1 << i
             i += 1
         if negs % 3 == 1:
             ans *= -1

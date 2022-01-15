@@ -10,7 +10,8 @@ class Solution:
             for num in nums:
                 if num & (1 << i) > 0:
                     currBitsSet += 1 
-            if currBitsSet % 3 == 1:
+                    currBitsSet %= 3
+            if currBitsSet == 1:
                 ans |= 1 << i
             i += 1
         if negs % 3 == 1:

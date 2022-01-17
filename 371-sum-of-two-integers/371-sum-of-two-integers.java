@@ -12,3 +12,9 @@ class Solution {
         return ans;
     }
 }
+
+//Approach: Addition of two integers can be thought of adding them bit by bit and can be sub divided into two operations - adding respective bits & considering carry over part.
+//Addition of respective bits can be calculated from XOR and overall result for bit = xor ^ carry i.e. aBit ^ bBit ^ carry. 
+//To find carry: carry cann be 1 or 0 - 1 if atleast two out of aBit, bBit and previous carry are 1. To simplify, note that carry = (aCurrBit & bCurrBit) | (xor & carry)
+
+//Note: Same approach won't work directly in Python as there is no cyclic overflow like Java in Python. So, negative number cases needs to be handled sparately there. 

@@ -33,4 +33,6 @@ class Solution {
     }
 }
 
+//Approach: For every 32 bits, count number of set bits. If it's not multiple of 3, then this bit is set for our answer. Find every set bit of answer.
 
+//Note-1: Use == in line-24 instead of '> 1'

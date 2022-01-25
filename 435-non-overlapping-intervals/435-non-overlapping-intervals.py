@@ -4,9 +4,11 @@ class Solution:
             return 0
         intervals = sorted(intervals, key = lambda interval: interval[1])
         print(intervals)
-        high, ans = intervals[0][1], 1
+        high, ans = intervals[0][1], 0
         for interval in intervals[1:]:
-            if interval[0] >= high:
-                high = interval[1]
+            if interval[0] < high:
+                high = min(interval[1], high)
                 ans += 1
-        return len(intervals) - ans
+            else:
+                high = interval[1]
+        return ans

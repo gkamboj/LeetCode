@@ -23,8 +23,6 @@ def swapNodes(linkedList, node1Data, node2Data):
         return
     elif not node1Previous:
         swapHeadAndNode(linkedList, node1, node2, node2Previous)
-    elif not node2Previous:
-        swapNodes(linkedList, node2Data, node1Data)
     else:
         swapNonAdjacentNodes(node1, node2, node1Previous, node2Previous)
 

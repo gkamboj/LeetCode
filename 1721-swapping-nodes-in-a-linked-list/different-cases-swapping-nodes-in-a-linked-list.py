@@ -80,3 +80,5 @@ class Solution:
 #Approach: Find kth node from start and end. To find these in a single pass, use two pointer approach (as used in Q-19) Handle scenarios like adjacent nodes, non-adjacent nodes, head node, etc. Remember to handle all cornr cases like ([1], 1), ([1,2], 1), etc.
 
 #Explore other approaches like using dummy node before head (https://leetcode.com/problems/swapping-nodes-in-a-linked-list/discuss/1054370/Python-3-or-Swapping-NODES-or-Swapping-Values-or-One-Pass-or-Fully-explained)
+
+#Easiest aproach would be to find nodes and swap the values. But that should be avoided, it's better to change pointers rather than changing just values

@@ -1,4 +1,4 @@
-class LinkedList(object):
+class DoublyLinkedList(object):
     def __init__(self):
         self.head = None
         self.tail = None
@@ -7,6 +7,7 @@ class LinkedList(object):
         def __init__(self, d):
             self.data = d
             self.next = None
+            self.prev = None
 
     def swapNodes(self, node1Data, node2Data):
         if self.head.data == node1Data:
@@ -74,32 +75,38 @@ class LinkedList(object):
         else:
             tail = self.tail
             tail.next = new_Node
+            new_Node.prev = tail
             self.tail = new_Node
 
     def printList(self):
         curr = self.head
         while curr.next:
-            print(curr.data, end=' -> ')
+            print(curr.data, end=' <-> ')
             curr = curr.next
+        print(curr.data)
+
+    def printListFromEnd(self):
+        curr = self.tail
+        while curr.prev:
+            print(curr.data, end = ' <-> ')
+            curr = curr.prev
         print(curr.data)
 
 
 def pushToList(nodesData):
-    linkedList = LinkedList()
+    doublyLinkedList = DoublyLinkedList()
     for nodeData in nodesData:
-        linkedList.push(nodeData)
-    return linkedList
+        doublyLinkedList.push(nodeData)
+    return doublyLinkedList
 
 
 def swapAndPrint(list, node1, node2):
-    # The constructed linked list is:
-    # 1->2->3->4->5->6->7
     linkedList = pushToList(list)
-    print("Linked list before calling swapNodes(): ", end=" ")
+    print("Original doubly linked list: ", end=" ")
     linkedList.printList()
     print("Swapping " + str(node1) + " and " + str(node2))
     linkedList.swapNodes(node1, node2)
-    print("Linked list after calling swapNodes(): ", end=" ")
+    print("Resultant list after swapping: ", end=" ")
     linkedList.printList()
     print()
 
@@ -110,8 +117,12 @@ swapAndPrint([1, 2, 3, 4, 8, 7, 6], 8, 1)
 #Non-adjacent
 swapAndPrint([1, 2, 3, 4, 8, 7, 6], 3, 6)
 swapAndPrint([1, 2, 3, 4, 8, 7, 6], 3, 8)
+swapAndPrint([1, 2, 3, 4, 8, 7, 6], 3, 7)
 
 # Adjacent cases
 swapAndPrint([1, 2, 3, 4, 8, 7, 6], 4, 3)
 swapAndPrint([1, 2, 3, 4, 8, 7, 6], 2, 1)
 swapAndPrint([1, 2, 3, 4, 8, 7, 6], 6, 7)
+
+#Only 2 nodes in list
+swapAndPrint([2, 3], 2, 3)

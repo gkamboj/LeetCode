@@ -1,7 +1,7 @@
 from ds.linkedlist.implementations.LinkedList import LinkedList
 
 
-def reverseLinkedList(linkedList):
+def reverseLinkedListIteratively(linkedList):
     currHead = linkedList.head
     prev = None
     while currHead:
@@ -16,8 +16,8 @@ def helper(nodesDataList):
     linkedList = LinkedList.createLinkedList(nodesDataList)
     print("Original linked list: ", end=" ")
     linkedList.printList()
-    reverseLinkedList(linkedList)
-    print("Reverse linked list: ", end=" ")
+    reverseLinkedListIteratively(linkedList)
+    print("Reversed linked list through iteration: ", end=" ")
     linkedList.printList()
 
 

@@ -5,8 +5,7 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if k == 1:
-            return head
+        if k == 1: return head
         curr, count, ans = head, 0, None
         while curr:
             count += 1
@@ -15,14 +14,11 @@ class Solution:
             curr = curr.next
         passes = count // k
         while head and passes > 0:
-            tail = head
-            nodes = self.reverseLinkedList(head, k)
-            tail.next = nodes[1]
-            head = nodes[0]
+            head = self.reverseLinkedList(head, k, head)
             passes -= 1
         return ans
     
-    def reverseLinkedList(self, head, k):
+    def reverseLinkedList(self, head, k, tail):
         prev, tail, num = None, head, k
         while k > 0:
             newHead = head.next
@@ -35,6 +31,8 @@ class Solution:
             curr = curr.next
             num -= 1
         if num == 1 and curr:
-            return [head, curr]
+            tail.next = curr
         else:
-            return [head, head]
+            tail.next = head
+        return head
+       

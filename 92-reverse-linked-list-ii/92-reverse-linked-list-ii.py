@@ -13,12 +13,12 @@ class Solution:
             curr = curr.next
             pos += 1
         rightNode = curr
-        reversePartHead = self.reverse(leftPrev.next, right - left, rightNode.next)
+        reversePartHead = self.reverse(leftPrev.next, right - left + 1, rightNode.next)
         leftPrev.next = reversePartHead
         return dummy.next
         
     def reverse(self, head, count, prev):
-        while count >= 0:
+        while count > 0:
             newHead = head.next
             head.next = prev
             prev = head
@@ -26,3 +26,4 @@ class Solution:
             count -= 1
         return prev
         
+#Approach: Find the left node and reverse (right - left + 1) starting frm it. Use dummy node before head to avaoid separately handling cases like left = 1

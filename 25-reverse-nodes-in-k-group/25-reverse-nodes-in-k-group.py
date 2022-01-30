@@ -7,14 +7,12 @@ class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         if k == 1:
             return head
-        curr, count, ans = head, 1, None
-        while curr.next:
+        curr, count, ans = head, 0, None
+        while curr:
+            count += 1
             if count == k:
                 ans = curr
             curr = curr.next
-            count += 1
-        if count == k:
-            ans = curr
         passes = count // k
         while head and passes > 0:
             tail = head

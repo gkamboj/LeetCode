@@ -5,7 +5,8 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if k == 1: return head
+        if k == 1 or not head or not head.next:
+            return head
         curr, count, ans = head, 0, None
         while curr:
             count += 1
@@ -36,3 +37,8 @@ class Solution:
             tail.next = head
         return head
        
+#Approach: Reverse each chunk separately and set next of previous tail as next reversed list head if next chunk is possible, else next value as it is in list.
+
+#Note: Instead of iterating to find the ans at start, dummy node can also be used instead by returning dummy.next at end
+
+#Explore more for recursive approach

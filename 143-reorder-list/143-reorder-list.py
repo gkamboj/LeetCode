@@ -32,3 +32,4 @@ class Solution:
             head = newHead
         return prev
             
+#Approach: Reverse the linked list from mid. Now, we just need to map alternate nodes from first half with alternate nodes from second half (i.e. reverse half)

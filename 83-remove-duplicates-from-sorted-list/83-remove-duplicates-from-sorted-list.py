@@ -15,3 +15,5 @@ class Solution:
                 prev = curr
             curr = curr.next
         return head
+    
+#Approach: Store first node as prev and start from 2nd node. If previous node value is same as current node value, remove the current node.

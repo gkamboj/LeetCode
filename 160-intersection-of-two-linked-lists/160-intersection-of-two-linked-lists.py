@@ -32,3 +32,7 @@ class Solution:
             n -= 1
             head = head.next
         return head
+    
+#Approach: Traverse over both nodes till last node. If last nodes are not same, then there is no intersection. If they are same, traverse the list with higher size x times where x = abs(size1 - size2). Once this traversal is done, traverse both nodes simultaneously till there is intersection.
+
+#See other submission for approach without calculating length difference.

@@ -13,3 +13,7 @@ class Solution:
             currA = currA.next if currA else headB
             currB = currB.next if currB else headA
         return currA
+    
+#Approach: Go over explanation in https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/49785/Java-solution-without-knowing-the-difference-in-len
+
+#See other submission for the approach with calculating length difference

@@ -17,7 +17,7 @@ class Solution:
                 break
         if not isLoop:
             return None
-        fast = head
+        slow = head
         while slow != fast:
             print(slow.val, fast.val)
             slow = slow.next

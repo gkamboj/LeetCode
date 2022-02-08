@@ -15,3 +15,5 @@ class Solution:
             if slow == fast:
                 return True
         return False
+    
+#Approach: Take slow and fast pointer. If they ever become equal, then there is a loop. If fast reach the end, then there is no loop.

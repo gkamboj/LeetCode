@@ -9,4 +9,6 @@ class Solution:
                         return True
                 return False
             
-#Approach: Check if target can be present in a row by comparing woth first and last element. If it's present, travers over row to return True or False 
+#Approach: This is linear search approach. Check if target can be present in a row by comparing woth first and last element. If it's present, travers over row to return True or False 
+
+#Check other submission for alternative approaches.

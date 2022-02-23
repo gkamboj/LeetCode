@@ -5,7 +5,7 @@ class Solution:
         rows, cols = len(matrix), len(matrix[0])
         low, high = 0, rows * cols - 1
         while low < high:
-            mid = (low + high) >> 1
+            mid = (low + high) // 2
             row = mid // cols
             col = mid % cols
             if matrix[row][col] == target:
@@ -15,3 +15,5 @@ class Solution:
             else:
                 high = mid - 1
         return matrix[low // cols][low % cols] == target
+    
+#Approach: This is binary search approach. Treat 2-D array as 1-D and apply binary search approach. Remember few conditions: use low < high (not low != high -> this will be issue if high becomes lesser than low).

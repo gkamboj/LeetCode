@@ -7,5 +7,6 @@ class Solution:
             dp.append(max(num, num + dp[-1]))
             maxSum = max(maxSum, dp[-1])
         return maxSum
-#This approach is using DP
+    
+#This approach is using DP. dp[i] represents the maximum possible sum of subarray which is ending at index i.
 #Refer other submissions for more approaches

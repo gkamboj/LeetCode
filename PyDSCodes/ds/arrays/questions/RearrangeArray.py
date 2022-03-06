@@ -1,0 +1,20 @@
+# Given an array of integers A of size N that is a permutation of [0, 1, 2, …, (N-1)].
+# Rearrange the array such that A[i] = j is changed to A[j] = i for all i and j form 0 to N-1.
+
+def rearrangeArray(arr):
+    n = len(arr)
+    for ind in range(n):
+        arr[arr[ind] % n] += n * ind
+    for ind in range(n):
+        arr[ind] = arr[ind] // n
+    return arr
+
+
+arr = [2, 0, 1, 4, 5, 3]
+# 1 2 0 5 3 4
+print(rearrangeArray(arr))
+
+# Approach: The idea is to store each element’s new and old value as quotient and remainder of n, respectively (n
+# being the size of the array). Instead of using arr[arr[ind]] in line-7, arr[arr[ind] % n] is used because some of
+# the elements maybe having the updated value when we reach that ind and accessing arr[arr[ind]] will give index out
+# of bound exception.

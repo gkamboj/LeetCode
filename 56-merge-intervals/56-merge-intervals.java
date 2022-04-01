@@ -23,3 +23,5 @@ class Solution {
         return mergedList.toArray(new int[mergedList.size()][]);
     }
 }
+
+//Approach: Sort the intervals by start. Traverse the array and keep updating high till there is overlap. Initialise low and high after adding to ans once there is no overlap. Focus on line-7 for short way to sort array.

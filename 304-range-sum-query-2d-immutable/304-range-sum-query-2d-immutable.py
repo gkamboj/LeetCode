@@ -15,3 +15,5 @@ class NumMatrix:
 # Your NumMatrix object will be instantiated and called as such:
 # obj = NumMatrix(matrix)
 # param_1 = obj.sumRegion(row1,col1,row2,col2)
+
+#Approach: Since there are multiple queries, we should create an auxiliary cache storage to avoid doing similar calculation again. prefixSumMatrix is that storage which is storing the sum of all elements of matrix upto given element. This allows to fetch the sum between any two set of indices in O(1).

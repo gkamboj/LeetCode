@@ -9,3 +9,5 @@ class Solution:
             if arrSum == sortedArrSum:
                 chunks += 1
         return chunks
+    
+#Approach: Create an auxiliary sorted array. Iterate over arrays and store sum of both arrays. Increase the counter when both sums become equal.

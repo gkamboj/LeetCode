@@ -11,4 +11,4 @@ class Solution:
                 chunks += 1
         return chunks
     
-#Approach: Create an auxiliary array to store minimum value from end at every index. Travers array from start and keep updating maximum value till now. If this max value is less than the right min, then increment the chunks. O(N) space & O(N) time.
+#Approach: Create an auxiliary array to store minimum value from end at every index. Travers array from start and keep updating maximum value till now. If this max value is less than the right min, then increment the chunks. Note that chunks has been initialsed to 1 (and not 0) as there will be atleast one chunk of whole array even if our condition is never satisfied. O(N) space & O(N) time.

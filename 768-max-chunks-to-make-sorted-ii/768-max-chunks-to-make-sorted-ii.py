@@ -10,3 +10,5 @@ class Solution:
             if leftMax <= rightMinArr[i + 1]:
                 chunks += 1
         return chunks
+    
+#Approach: Create an auxiliary array to store minimum value from end at every index. Travers array from start and keep updating maximum value till now. If this max value is less than the right max, then increment the chunks.

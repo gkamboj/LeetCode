@@ -18,3 +18,5 @@ def gcd(a, b):
 print(divisorGame(12, 3, 2))
 print(divisorGame(87120, 3859, 671))
 
+# Approach: For a number to be divisible by both a and b, it should be divisible by LCM(a, b). Also, LCM = (a * b) /
+# GCD(a, b). Once we have LCM, required count can be found out by num/lcm.

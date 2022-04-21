@@ -11,3 +11,4 @@ class Solution:
                 low = mid + 1
         return low
     
+#Approach: Since we need to find just one peak element (and not all), we can apply binary search. This works because if nums[mid] > nums[mid + 1], that means peak has to be on left: either whole array will be decreasing (nums[0] will be peak) or there will be dip somewhere on left side. Similarly when nums[mid] < nums[mid + 1], peak will be on right.

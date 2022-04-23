@@ -14,3 +14,6 @@ class Solution:
                 low = mid + 1
         return ans
     
+# Approach: Since the first element of row is greater than the last element of previous row, whole matrix can be treated as a 1-D sorted matrix. So, considering the given matrix as 1-D sorted matrix, we can apply the binary serach algorithm.
+
+# Note: Since there is no comparison with adjacent elements in main method, minMat <= maxMat is used (and not minMat < maxMat).

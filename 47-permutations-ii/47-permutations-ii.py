@@ -2,10 +2,10 @@ from collections import defaultdict
 
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        result, covered = [], defaultdict(int)
-        
         if len(nums) == 1:
             return [[nums[0]]]
+        
+        result, covered = [], defaultdict(int)
         
         for ind in range(len(nums)):
             num = nums.pop(0)

@@ -24,6 +24,6 @@ class Solution:
         return result
                     
         
-# Approach: This is recursive approach (similar to LC 46 - Permutations). For handling duplicates, sort the input before passing it to recursive method and while handling any number, check if it's not equal to its previous
+# Approach: This is recursive approach (similar to LC 46 - Permutations): for every number, find permutations of remaining array and append that number at the end of these permutations. For handling duplicates, sort the input before passing it to recursive method and while handling any number, check if it's not equal to its previous
 
 # Note: New method is created instead of using the given method because we need sorted input only for the given input array, not for every recursive call. To understand this, take example of [1, 2, 2]: observe that after first iteration, we'll have [2, 2, 1] in result. During 2nd iteration, nums will be [2, 1] after the pop(0), but on calling the recusive methof it'll get changed to [1, 2] due to sorting, which is not what we want.

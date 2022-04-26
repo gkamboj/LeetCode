@@ -3,11 +3,6 @@ class Solution:
         result = [[]]
         
         for num in nums:
-            sets = []
-            for subset in result:
-                newSubset = subset[:]
-                newSubset.append(num)
-                sets.append(newSubset)
-            result += sets
+            result += [subset + [num] for subset in result]
             
         return result

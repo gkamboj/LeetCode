@@ -1,16 +1,14 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        if len(nums) == 1:
-            return [[nums[0]]]
+        result = [[]]
         
-        result = []
-        
-        for i in range(len(nums)):
-            num = nums.pop(0)
-            perms = self.permute(nums)
-            nums.append(num)
-            for perm in perms:
-                perm.append(num)
-            result += perms
+        for num in nums:
+            perms = []
+            for perm in result:
+                for i in range(len(perm) + 1):
+                    perms.append(perm[:i] + [num] + perm[i:])
+            result = perms
             
         return result
+    
+# Approach: This is iterative approach. Code is self-explanatory.

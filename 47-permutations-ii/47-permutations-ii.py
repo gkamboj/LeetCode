@@ -17,4 +17,4 @@ class Solution:
                 
                     
         
-# Approach: This is iterative approach similar to LC-46.
+# Approach: This is iterative approach similar to LC-46. To handle duplicates, dont't add a number after its duplicate (as permutations arising from this will aready be taken care from other cases).

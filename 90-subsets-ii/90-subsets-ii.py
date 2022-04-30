@@ -10,3 +10,5 @@ class Solution:
             result += sets
             prev = num
         return result
+    
+# Approach: This is iterative solution similar to iterative approach of LC-78. To handle duplicates, append num to only those subsets which were appended in last iteration when num is duplicate. 

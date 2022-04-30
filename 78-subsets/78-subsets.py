@@ -6,7 +6,7 @@ class Solution:
         result = []
         
         while len(nums) > 0:
-            num = nums.pop(0)
+            num = nums.pop(-1)
             sets = self.subsets(nums)
             result += [subset[:] for subset in sets]
             result += [subset + [num] for subset in sets]

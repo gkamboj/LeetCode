@@ -12,5 +12,7 @@ class Solution:
             return
             
         for i in range(len(arr)):
+            if arr[i] > target:
+                continue
             self.combinationSumRecursive(arr[i:], target - arr[i], combination + [arr[i]], result)
             

@@ -1,7 +1,7 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
-        self.combinationSumRecursive(candidates, target, [], result)
+        self.combinationSumRecursive(sorted(candidates), target, [], result)
         return result
     
     def combinationSumRecursive(self, arr, target, combination, result):
@@ -13,6 +13,6 @@ class Solution:
             
         for i in range(len(arr)):
             if arr[i] > target:
-                continue
+                break
             self.combinationSumRecursive(arr[i:], target - arr[i], combination + [arr[i]], result)
             

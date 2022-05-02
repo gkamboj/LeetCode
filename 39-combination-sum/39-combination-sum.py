@@ -1,41 +1,26 @@
 class Solution:
      def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        n = len(candidates)
+        result, pos, currPos, currSum = [], [], 0, 0
+        candidates.sort()
         
-        candidates.sort()        
-        if n<=0 or candidates[0] <= 0:
-            return []
-        
-        subSets, tempList, posList = [], [], []
-        currSum = pos = 0
-        
-        while pos < n:
-            if currSum > target:
-                # pop curr and it's parent, because we are sorted and distinct
-                # adding any more items will only increase the sum
-                t = 2
-                while tempList and t:
-                    currSum -= tempList.pop()
-                    pos = posList.pop()
-                    t -= 1
-                pos += 1
-            elif currSum == target:
-                # Found a subset
-                subSets.append(tempList[:])
-                currSum -= tempList.pop()
-                pos = posList.pop()
-                pos += 1
+        while currPos < len(candidates):
+            if currSum == target:
+                result.append([candidates[i] for i in pos])
+                currSum -= candidates[pos.pop()]
+                currPos += 1
+            elif currSum < target:
+                pos.append(currPos)
+                currSum += candidates[currPos]
             else:
-                currSum += candidates[pos]
-                tempList.append(candidates[pos])
-                posList.append(pos)
+                temp = 2
+                while pos and temp > 0:
+                    temp -= 1
+                    currPos = pos.pop()
+                    currSum -= candidates[currPos]
+                currPos += 1
             
-            # At the end of each level, check if we still have some levels left to check
-            while pos >= n and posList:
-                # print("inside",tempList ,posList, currSum)
-                currSum -= tempList.pop()
-                pos = posList.pop() + 1
-                
-            # print(pos, tempList ,posList, currSum)
+            while currPos >= len(candidates) and pos:
+                currPos = pos.pop() + 1
+                currSum -= candidates[currPos - 1]
             
-        return subSets
+        return result

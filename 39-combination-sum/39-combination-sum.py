@@ -7,9 +7,6 @@ class Solution:
     def combinationSumRecursive(self, arr, target, combination, result):
         if target == 0:
             result.append(combination)
-        
-        if target < 0:
-            return
             
         for i in range(len(arr)):
             if arr[i] > target:

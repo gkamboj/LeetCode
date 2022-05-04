@@ -18,3 +18,5 @@ class Solution:
             if s[i] != s[-i-1]:
                 return False
         return True
+    
+# Approach: This is backtracking approach using DFS. Refer approach-1 of LC official solution for detail.

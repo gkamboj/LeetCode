@@ -28,4 +28,4 @@ class Solution:
                 result = self.isPalindrome(s[1:-1], d)
         return result
     
-# Approach: This is backtracking approach using DFS. Refer approach-1 of LC official solution for detail.
+# Approach: This is backtracking approach using DFS. To optimise the isPalindrome method, dictionary is used to store the result of already checked strings. Refer Approach-2 of LC official solution for detail.

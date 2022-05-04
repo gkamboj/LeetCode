@@ -17,13 +17,18 @@ class Solution:
     def isPalindrome(self, s, d):
         if s in d:
             result = d[s]
-        else:
+        elif len(s) == 1:
             d[s] = True
-            for i in range(len(s) // 2):
-                if s[i] != s[-i-1]:
-                    d[s] = False
-                    break
             result = d[s]
-        return d[s]
+        elif len(s) == 2:
+            d[s] = (s[0] == s[1])
+            result = d[s]
+        else:
+            if s[0] != s[-1]:
+                d[s] = False
+                result = d[s]
+            else:
+                result = self.isPalindrome(s[1:-1], d)
+        return result
     
 # Approach: This is backtracking approach using DFS. Refer approach-1 of LC official solution for detail.

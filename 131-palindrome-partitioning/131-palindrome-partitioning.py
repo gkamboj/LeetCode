@@ -17,11 +17,8 @@ class Solution:
     def isPalindrome(self, s, d):
         if s in d:
             result = d[s]
-        elif len(s) == 1:
+        elif len(s) <= 1:
             d[s] = True
-            result = d[s]
-        elif len(s) == 2:
-            d[s] = (s[0] == s[1])
             result = d[s]
         else:
             if s[0] != s[-1]:

@@ -6,6 +6,7 @@ class Solution:
             start += 1
         return result
     
+    
 # Approach: This is an iterative approach. Use the fact that for every 2^n gray codes, next 2^n gray codes can be found by adding 2^n to each value (in reverse order). For. eg.,:
 # n = 0 =>   0 (0)
 # n = 1 =>   1 (1)

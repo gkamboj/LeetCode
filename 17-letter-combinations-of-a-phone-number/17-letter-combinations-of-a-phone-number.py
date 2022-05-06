@@ -20,3 +20,7 @@ class Solution:
                 result.append(curr + char)
                 
         return result
+    
+# Approach: This is iterative approach. Start by popping out first element of result and append it to every character from current digit one by one, and append these to result. Continue till all the digits are iterated.
+
+# Reference: https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/8064/My-java-solution-with-FIFO-queue

@@ -23,3 +23,7 @@ class Solution:
         
         for i in d[digits[ind]]:
             self.letterCombinationsRecursive(digits, d, result, ind + 1, comb + i)
+            
+# Approach: This is recursive approach using DFS. Starting from first digit, iterate for its every character. For each iteration, go till the last digit and keep updating the result when length og combination is same as input.
+
+# Reference: https://leetcode.com/problems/letter-combinations-of-a-phone-number/discuss/1148252/Short-and-Easy-Solutions-or-Multiple-Approaches-Explained-or-Beats-100

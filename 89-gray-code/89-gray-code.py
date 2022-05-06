@@ -11,3 +11,5 @@ class Solution:
         
         self.grayCodeRecursive(n - 1, result)
         result += [i | (1 << (n - 1)) for i in reversed(result)]
+        
+# Approach: This is revursive approach using logic similar to iterative-1 submission

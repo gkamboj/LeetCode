@@ -5,7 +5,7 @@ class Solution:
             for val in row:
                 if val != '.':
                     arr.append(int(val))
-            if not self.isValid(sorted(arr), False):
+            if not self.isValid(sorted(arr)):
                 return False
             arr = []
             
@@ -13,7 +13,7 @@ class Solution:
             for row in board:
                 if row[i] != '.':
                     arr.append(int(row[i]))
-            if not self.isValid(sorted(arr), True):
+            if not self.isValid(sorted(arr)):
                 return False
             arr = []
             
@@ -23,7 +23,7 @@ class Solution:
                     for col in range(colInd, colInd + 3):
                         if board[row][col] != '.':
                             arr.append(int(board[row][col]))
-                if not self.isValid(sorted(arr), False):
+                if not self.isValid(sorted(arr)):
                     return False
                 arr = []
                 
@@ -31,9 +31,7 @@ class Solution:
             
         
         
-    def isValid(self, arr, toPrint):
-        if toPrint:
-            print(arr)
+    def isValid(self, arr):
         isValid = True
         if len(arr) > 1:
             for i in range(1, len(arr)):

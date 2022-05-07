@@ -17,6 +17,6 @@ class Solution:
     def isPerfectSquare(self, num):
         return int(num ** 0.5) ** 2 == num
     
-# Approach: This is recursive DFS solution.
+# Approach: This is recursive DFS solution. To handle duplicate permutations, pass sorted input to recursive method and check if current num is not equal to its previous, only then call the recursive method. For every element, check if its sum with last element of perm is perfect square. If so, call the recursive method again after omitting it from array.
 
 # Reference: https://leetcode.com/problems/number-of-squareful-arrays/discuss/841254/Python-easy-to-understand-backtracking-solution-with-comments

@@ -27,6 +27,6 @@ class Solution:
                 
         return True
     
-# Approach: This is iterative approach. For every matrix value, check if it's valid. To check validity, 4 checks are needed: value (. or not), repetition in row, repetition in column and repetition in sub-square.
+# Approach: This is iterative approach. For every matrix value, check if it's valid. To check validity, 4 checks are needed: value ('.' or not), repetition in row, repetition in column and repetition in sub-square.
 
 # Reference: https://leetcode.com/problems/valid-sudoku/discuss/15666/An-easy-to-understand-Python-solution

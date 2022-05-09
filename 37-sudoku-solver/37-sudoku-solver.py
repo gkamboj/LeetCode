@@ -10,10 +10,7 @@ class Solution:
             for j in range(len(board[0])):
                 val = board[i][j]
                 if val != '.':
-                    rowVal, colVal, subSqVal = str(i) + 'r-' + val, val + '-c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
-                    d[rowVal] = 1
-                    d[colVal] = 1
-                    d[subSqVal] = 1
+                    self.updateVals(board, d, True, val, i, j, val)
         self.solve(board, d)
         
     def solve(self, board, d):
@@ -21,26 +18,27 @@ class Solution:
             for j in range(len(board[0])):
                 if board[i][j] == '.':
                     for c in range(1, 10):
-                        if self.isValid(board, i, j, d, str(c)):
-                            board[i][j] = str(c)
-                            rowVal, colVal, subSqVal = str(i) + 'r-' + str(c), str(c) + '-c' + str(j), str(i // 3 * 3) + '-' + str(c) + '-' + str(j // 3 * 3)
-                            d[rowVal] = 1
-                            d[colVal] = 1
-                            d[subSqVal] = 1
+                        if self.isValid(i, j, d, str(c)):
+                            self.updateVals(board, d, True, str(c), i, j, str(c))
                             if self.solve(board, d):
                                 return True
                             else:
-                                board[i][j] = '.'
-                                d[rowVal] = 0
-                                d[colVal] = 0
-                                d[subSqVal] = 0
+                                self.updateVals(board, d, False, str(c), i, j, '.')
                     return False
         return True
         
         
-    def isValid(self, board, i, j, d, val):
+    def isValid(self, i, j, d, val):
         isValid = True
         rowVal, colVal, subSqVal = str(i) + 'r-' + val, val + '-c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
         if d[rowVal] or d[colVal] or d[subSqVal]:
             isValid = False
         return isValid
+    
+    def updateVals(self, board, d, toSet, val, i, j, newVal):
+        rowVal, colVal, subSqVal = str(i) + 'r-' + val, val + '-c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
+        d[rowVal] = int(toSet)
+        d[colVal] = int(toSet)
+        d[subSqVal] = int(toSet)
+        board[i][j] = newVal
+        

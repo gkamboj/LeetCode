@@ -44,4 +44,6 @@ class Solution:
         
 # Approach: This is backtracking apporach. A map is being maintained to store all the values already existing, to reduce the complexity of isValid method to O(1) instead of running double for loop everytime. Also, since we need to make 3 checks (row, column and subsquare), these 3 corresponding values are stored in map for every possible cell.
 
+# Note: Since multiple solutions are possible but we need to find any possible solution, we don't backtrack to check for every possible value but return True as soon as any matching value is returned (Line-24)
+
 # Reference: https://www.youtube.com/watch?v=FWAIf_EVUKE

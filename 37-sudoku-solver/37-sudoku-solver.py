@@ -30,15 +30,18 @@ class Solution:
         
     def isValid(self, i, j, d, val):
         isValid = True
-        rowVal, colVal, subSqVal = str(i) + 'r-' + val, val + '-c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
+        rowVal, colVal, subSqVal = str(i) + 'r' + val, val + 'c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
         if d[rowVal] or d[colVal] or d[subSqVal]:
             isValid = False
         return isValid
     
     def updateVals(self, board, d, toSet, val, i, j, newVal):
-        rowVal, colVal, subSqVal = str(i) + 'r-' + val, val + '-c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
+        rowVal, colVal, subSqVal = str(i) + 'r' + val, val + 'c' + str(j), str(i // 3 * 3) + '-' + val + '-' + str(j // 3 * 3)
         d[rowVal] = int(toSet)
         d[colVal] = int(toSet)
         d[subSqVal] = int(toSet)
         board[i][j] = newVal
         
+# Approach: This is backtracking apporach. A map is being maintained to store all the values already existing, to reduce the complexity of isValid method to O(1) instead of running double for loop everytime. Also, since we need to make 3 checks (row, column and subsquare), these 3 corresponding values are stored in map for every possible cell.
+
+# Reference: https://www.youtube.com/watch?v=FWAIf_EVUKE

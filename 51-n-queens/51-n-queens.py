@@ -56,7 +56,7 @@ class Solution:
         
         return True
     
-# Approach: This is backtracking approach. Start from first row and check every combination. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required).
+# Approach: This is backtracking approach. Start from first row and check every combination. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required)
 
 # Reference: https://www.youtube.com/watch?v=i05Ju7AftcM
             

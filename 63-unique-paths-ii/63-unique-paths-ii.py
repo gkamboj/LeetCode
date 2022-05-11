@@ -3,16 +3,19 @@ class Solution:
         if obstacleGrid[0][0] == 1:
             return 0
         dp = [[0 for i in range(len(obstacleGrid[0]))] for j in range(len(obstacleGrid))]
+        arr = [0 for i in range(len(obstacleGrid[0]))]
         for row in range(len(obstacleGrid)):
             for col in range(len(obstacleGrid[0])):
                 if row == 0 and col == 0:
                     dp[row][col] = 1
+                    arr[col] = 1
                 elif obstacleGrid[row][col] == 1:
                     dp[row][col] = 0
+                    arr[col] = 0        
                 elif row == 0:
-                    dp[row][col] = int(dp[row][col - 1] == 1)
+                    dp[row][col] = dp[row][col - 1]
                 elif col == 0:
-                    dp[row][col] = int(dp[row - 1][col])
+                    dp[row][col] = dp[row - 1][col]
                 else:
                     dp[row][col] = dp[row - 1][col] + dp[row][col - 1]
         return dp[-1][-1]

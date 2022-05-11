@@ -17,3 +17,4 @@ class Solution:
                     obstacleGrid[row][col] = obstacleGrid[row - 1][col] + obstacleGrid[row][col - 1]
         return obstacleGrid[-1][-1]
                     
+# Approach: This is DP approach, similar to DP submission of LC-62, with the change being setting the position to 0 if it's blocked. To avoid extra space, input grid array is being modified.

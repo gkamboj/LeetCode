@@ -24,3 +24,4 @@ class Solution:
                 d['r' + str(row + col)] = 0
                 d['l' + str(row - col - 1 + len(board))] = 0
                 
+# Approach: This is backtracking approach. Refer LC-51 for explanation.

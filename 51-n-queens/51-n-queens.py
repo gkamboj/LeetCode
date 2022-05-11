@@ -38,7 +38,9 @@ class Solution:
         
         return True
     
-# Approach: This is backtracking approach. Start from first row and check every combination. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required).
+# Approach: This is backtracking approach. Start by placing queen in first row and check for every combination that is every column for the given row. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required).
+
+# Note: In isValid() method, we only need to check the area above the current position (that is diaganoally North-West, diagonally North-East and the rows of current column till the current row) and not the whole aread because for at given row, only the area above it'd be covered updto that instant.
 
 # Reference: https://www.youtube.com/watch?v=i05Ju7AftcM
             

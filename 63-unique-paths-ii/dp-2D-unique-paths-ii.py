@@ -10,9 +10,9 @@ class Solution:
                 elif obstacleGrid[row][col] == 1:
                     obstacleGrid[row][col] = 0
                 elif row == 0:
-                    obstacleGrid[row][col] = int(obstacleGrid[row][col - 1] == 1)
+                    obstacleGrid[row][col] = obstacleGrid[row][col - 1]
                 elif col == 0:
-                    obstacleGrid[row][col] = int(obstacleGrid[row - 1][col] == 1)
+                    obstacleGrid[row][col] = obstacleGrid[row - 1][col]
                 else:
                     obstacleGrid[row][col] = obstacleGrid[row - 1][col] + obstacleGrid[row][col - 1]
         return obstacleGrid[-1][-1]

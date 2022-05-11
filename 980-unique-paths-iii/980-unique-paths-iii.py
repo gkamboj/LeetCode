@@ -23,6 +23,6 @@ class Solution:
                 self.solve(grid, i, j - 1, count - 1, result)
                 grid[i][j] = val
             
-# Approach: This is backtracking approach using DFS. Call the recursive method with starting indices and keep on recursively calling the method for all 4 directions. Whenever base conditions is matched, update the result counter.
+# Approach: This is backtracking approach using DFS. Call the recursive method with starting indices. If base conditions is matched, update the result counter, else recursively call the method for all possible 4 directions
 
 # Reference: https://leetcode.com/problems/unique-paths-iii/discuss/885019/Python-easy-to-understand-backtracking-solution

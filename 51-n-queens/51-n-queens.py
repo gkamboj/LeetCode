@@ -20,9 +20,12 @@ class Solution:
                 board[row][col] = '.'
                 d['c' + str(col)], d['r' + str(row + col)], d['l' + str(row - col - 1 + len(board))] = 0, 0, 0
     
-# Approach: This is backtracking approach. Start by placing queen in first row and check for every combination that is every column for the given row. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required).
+# Approach: This is backtracking approach along with the use of hashing. Start by placing queen in first row and check for every combination that is every column for the given row. Whenever any combination satisfies requirement, add it to result. Remember to reset cell to '.' from 'Q' after recursive call because we need to check for every subsequent possibilities also (since every possibl combination is required).
 
-# Note: In isValid() method, we only need to check the area above the current position (that is diaganoally North-West, diagonally North-East and the rows of current column till the current row) and not the whole aread because for at given row, only the area above it'd be covered updto that instant.
+# Note: To check if current position is valid position for the queen, hashing is used. Three types of keys are being hashed:
+# 1. column containing Q with key being 'c' +. str(col). Eg., c0, c1, etc
+# 2. Diagonally top right check (that is North-East direction): Observe that value (row + col) will always remain constant for this diagonal. So, hashing 'r' + str(row + col)
+# 3. Digonally top left check (that is North-West direction): Observe that value (row + (n - col - 1)) will always remaind constant along the diagona;. So, hashing 'l' + str(row + n - col - 1)
 
 # Reference: https://www.youtube.com/watch?v=i05Ju7AftcM
             

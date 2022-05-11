@@ -10,4 +10,12 @@ class Solution:
         return dp[-1][-1]
                     
     
-# Aproach: This is recursive approach -> Number of ways of reaching the bottom right corner will be the sum of number of ways for reaching left and top of the bottom right cell. Applying this recursively with base case being when m = n = 1.
+# Aproach: This is DP approach using a 2-D array s.t. dp[i][j] represents the number of ways of reching (i, j) from start. Observe that dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+# Note: Below is a recursive solution, but it gives time limit exceeded for large inputs:
+#def uniquePaths(m, n):
+#    if m == 1 and n == 1:
+#        return 1
+#    if m < 1 or n < 1:
+#        return 0
+#    return uniquePaths(m - 1, n) + uniquePaths(m, n - 1)

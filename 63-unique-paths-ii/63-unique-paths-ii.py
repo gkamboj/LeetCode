@@ -18,7 +18,8 @@ class Solution:
         return arr[-1]
         
                     
-# Approach: This is DP approach, similar to DP submission of LC-62, with the change being setting the position to 0 if it's blocked. To avoid extra space, input grid array is being modified.
+# Approach: This is DP tabulation approach, similar to other DP submission but with optimised space. Here instead of 2D DP array, 1D array is being used. This is because at anytime, we just need the left and top value. Left value can be taken from arr[i - 1] index where i represent the current index, whereas top value is just the current valu that is arr[i] (as this represents ith column value from previous row).
+
 
 # Below is recusrion approach with memoization (giving TLE):
 #def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:

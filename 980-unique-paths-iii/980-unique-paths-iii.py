@@ -15,9 +15,14 @@ class Solution:
             val = grid[i][j]
             if val == 2 and count == -1:
                 result[0] += 1
-            grid[i][j] = -1
-            self.solve(grid, i - 1, j, count - 1, result)
-            self.solve(grid, i + 1, j, count - 1, result)
-            self.solve(grid, i, j + 1, count - 1, result)
-            self.solve(grid, i, j - 1, count - 1, result)
-            grid[i][j] = val
+            else:
+                grid[i][j] = -1
+                self.solve(grid, i - 1, j, count - 1, result)
+                self.solve(grid, i + 1, j, count - 1, result)
+                self.solve(grid, i, j + 1, count - 1, result)
+                self.solve(grid, i, j - 1, count - 1, result)
+                grid[i][j] = val
+            
+# Approach: This is backtracking approach using DFS. Call the recursive method with starting indices and keep on recursively calling the method for all 4 directions. Whenever base conditions is matched, update the result counter.
+
+# Reference: https://leetcode.com/problems/unique-paths-iii/discuss/885019/Python-easy-to-understand-backtracking-solution

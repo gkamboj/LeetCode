@@ -11,4 +11,4 @@ class Solution:
         self.solve(i + 1, column, ans)
         
     
-# Approach: Treat the input as number in base-26 number system, and convert it to decimal number. Use ASCII value to find the value of character in base-26 system.
+# Approach: This is recursive approach with logic similar to iterative sumbission.

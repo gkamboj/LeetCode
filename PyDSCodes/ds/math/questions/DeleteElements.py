@@ -2,13 +2,13 @@
 # of the resulting array becomes 1. If not possible then return -1.
 
 def deleteElements(arr):
-    gcdVal = arr[1]
-    for num in arr[1:]:
-        gcdVal = gcd(gcdVal, num)
-    if gcdVal > 1:
-        return -1
-    else:
-        return 0
+    ans, gcd = -1, A[0]
+    for i in A[1:]:
+        gcd = self.gcd(gcd, i)
+        if gcd == 1:
+            ans = 0
+            break
+    return ans
 
 
 def gcd(a, b):

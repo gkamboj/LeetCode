@@ -4,10 +4,10 @@ class Solution:
         while start <= end:
             mid = start + (end - start) // 2
             val = matrix[mid // len(matrix[0])][mid % len(matrix[0])]
-            if target == val:
+            if val == target:
                 return True
-            elif target > val:
-                start = mid + 1
-            else:
+            elif val > target:
                 end = mid - 1
+            else:
+                start = mid + 1
         return False

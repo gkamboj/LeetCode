@@ -10,10 +10,9 @@ class Solution:
             else:
                 d[str(i)] = [chr(c) for c in range(curr, curr + 3)]
                 curr += 3
-        for c in digits:
-            temp = []
-            for r in result:
-                temp += [r + char for char in d[c]]
-            result = temp
+        while len(result[0]) != len(digits):
+            curr = result.pop(0)
+            for c in d[digits[len(curr)]]:
+                result.append(curr + c)
         return result
         

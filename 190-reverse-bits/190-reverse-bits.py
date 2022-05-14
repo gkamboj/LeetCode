@@ -3,4 +3,4 @@ class Solution:
         ans = 0
         for i in range(32):
             ans = (ans | ((n >> i) & 1)) << 1
-        return ans // 2
+        return ans >> 1

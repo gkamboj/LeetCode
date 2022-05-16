@@ -2,22 +2,16 @@ from collections import defaultdict
 
 class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        return self.permute(sorted(nums))
+        result = []
+        self.permute(sorted(nums), [], result)
+        return result
         
-    def permute(self, nums):
-        if len(nums) == 1:
-            return [[nums[0]]]
-        
-        result, perv = [], -11
+    def permute(self, nums, perm, result):
+        if not nums:
+            result.append(perm)
+            return
         
         for i in range(len(nums)):
-            num = nums.pop(0)
-            if num != perv:
-                perms = self.permute(nums)
-                for perm in perms:
-                    perm.append(num)
-                result += perms
-            nums.append(num)
-            perv = num
-        
-        return result
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            self.permute(nums[:i] + nums[i + 1:], perm + [nums[i]], result)

@@ -17,7 +17,7 @@ class Solution:
         return ans
             
 #Approach: Firstly check both numbers for negative sign and consider their absolute value for doing division. Now, to do the division, we can check for every bit starting from most significant bit, and whenever divisor * 2^i <= dividend for any ith bit, consider ith bit as part of answer and reduce divisor by diviro * 2^i (Since multiplication can't be used, use << operator for this). To further understand why this works, consider following example:
-# 94 / 6 (considering from i = 5 to i = 0 only for this example):
+# 94 / 6 (considering from i = 5 to i = 0 only for this example) :
 # 6 * 2^5 <= 94 => No
 # 6 * 2^4 <= 94 => No
 # 6 * 2^3 <= 94 => Yes => ans = 0 + 2^3, divisor = 94 - 6 * 2^3 = 46

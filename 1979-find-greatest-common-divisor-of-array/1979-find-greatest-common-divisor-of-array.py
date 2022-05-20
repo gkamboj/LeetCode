@@ -4,7 +4,7 @@ class Solution:
         return self.gcd(minVal, maxVal)
         
     def gcd(self, a, b):
-        while b > 0:
+        while b > 0: 
             r = a % b
             a = b
             b = r

@@ -19,4 +19,4 @@ class Solution:
                 return False
         return True
     
-# Approach: This is backtracking approach using DFS. Refer approach-1 of LC official solution for detail.
+# Approach: This is backtracking approach using DFS. Refer approach-1 of LC official solution for more detail.

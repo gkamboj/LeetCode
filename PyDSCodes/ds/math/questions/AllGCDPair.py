@@ -14,14 +14,13 @@ def allGCDPair(arr):
 
     ind = 0
 
-    while len(result) <= (len(arr) ** 0.5) - 1 and ind < len(arr):
+    for ind in range(len(arr)):
         if elementMap[arr[ind]] > 0:
             elementMap[arr[ind]] -= 1
             for num in result:
                 gcdVal = gcd(num, arr[ind])
                 elementMap[gcdVal] -= 2
             result.append(arr[ind])
-        ind += 1
 
     return result
 

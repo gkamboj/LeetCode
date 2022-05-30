@@ -21,4 +21,4 @@ class Solution:
             curr += arr[i] - arr[i - size]
         return True if curr >= target else ans
     
-# Approach: This is binary search - start from the mid size and go left or right depending on whether the size is valid or not. TC: O(n logn), Space: O(1).
+# Approach: This is binary search approach - start from the mid size and go left or right depending on whether the size is valid or not. TC: O(n logn), Space: O(1).

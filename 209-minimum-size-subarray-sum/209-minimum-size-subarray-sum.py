@@ -20,3 +20,5 @@ class Solution:
                 break
             curr += arr[i] - arr[i - size]
         return True if curr >= target else ans
+    
+# Approach: This is binary search approach - start from mid size and go left or right depending on whether the size is valid or not. TC: O(n logn), Space: O(1)

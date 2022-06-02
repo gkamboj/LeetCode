@@ -1,15 +1,16 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
-        self.dfs(sorted(candidates), [], target, result)
+        self.solve(sorted(candidates), [], result, target)
         return result
     
-    def dfs(self, candidates, comb, target, result):
+    def solve(self, nums, comb, result, target):
         if target == 0:
             result.append(comb)
             return
         
-        for i in range(len(candidates)):
-            if (i > 0 and candidates[i - 1] == candidates[i]) or candidates[i] > target:
-                continue
-            self.dfs(candidates[i + 1:], comb + [candidates[i]], target - candidates[i], result)
+        for i in range(len(nums)):
+            if nums[i] > target:
+                break
+            if i == 0 or nums[i] != nums[i - 1]:
+                self.solve(nums[i + 1:], comb + [nums[i]], result, target - nums[i])

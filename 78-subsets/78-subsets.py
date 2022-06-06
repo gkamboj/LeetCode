@@ -1,10 +1,13 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         result = []
-        self.solve(nums, [], result)
+        self.solve(nums, [], result, 0)
         return result
         
-    def solve(self, nums, subset, result):
-        result.append(subset)
-        for i in range(len(nums)):
-            self.solve(nums[i + 1:], subset + [nums[i]], result)
+    def solve(self, nums, subset, result, ind):
+        if ind >= len(nums):
+            result.append(subset)
+            return
+        
+        self.solve(nums, subset + [nums[ind]], result, ind + 1)
+        self.solve(nums, subset, result, ind + 1)

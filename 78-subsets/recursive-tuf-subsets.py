@@ -11,3 +11,5 @@ class Solution:
         
         self.solve(nums, subset + [nums[ind]], result, ind + 1)
         self.solve(nums, subset, result, ind + 1)
+        
+# Approach: https://www.youtube.com/watch?v=AxNNVECce8c&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=6

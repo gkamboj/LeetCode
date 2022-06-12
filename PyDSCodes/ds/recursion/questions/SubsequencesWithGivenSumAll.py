@@ -36,3 +36,5 @@ print(findSubsequencesRecursively2([5, 12, 3, 17, 1, 18, 15, 3, 17], 18))
 
 # Approach: Both approaches are similar to LC-78 Subset problem submissions with the sum check being the only added
 # condition.
+
+# Note-1: Refer TUF Recursion playlist L-7 notes for theory

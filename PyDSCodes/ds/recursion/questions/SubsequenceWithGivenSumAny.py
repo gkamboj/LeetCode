@@ -47,4 +47,5 @@ print(findSubsequenceRecursively2([5, 12, 3, 17, 1, 18, 15, 3, 17], 18))
 # subsequence. To avoid such calls, functional method is written which returns boolean (unlike the void method in all
 # subsequences problem).
 
-# Note: Refer https://youtu.be/eQCS_v3bw0Q (from 11:40 to 18:10) for more detail
+# Note-1: Refer https://youtu.be/eQCS_v3bw0Q (from 11:40 to 18:10) for more detail
+# Note-2: Refer TUF Recursion playlist L-7 notes for theory

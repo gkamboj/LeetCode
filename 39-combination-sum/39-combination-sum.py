@@ -9,7 +9,9 @@ class Solution:
             if target == 0:
                 result.append(comb)
             return
-        if target < 0:
-            return
-        self.solve(nums, result, comb + [nums[ind]], ind, target - nums[ind])
+        if nums[ind] <= target:
+            self.solve(nums, result, comb + [nums[ind]], ind, target - nums[ind])
         self.solve(nums, result, comb, ind + 1, target)
+        
+        
+# Arpproach: This approach is based on TUF's subsequences approach. Refer https://youtu.be/OyZFFqQtu98 for detail.

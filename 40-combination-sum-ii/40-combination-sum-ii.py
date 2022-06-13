@@ -9,9 +9,9 @@ class Solution:
             result.append(comb)
             return
         
-        if target < 0:
-            return
-            
         for i in range(len(nums)):
-            if nums[i] <= target and (i == 0 or nums[i] != nums[i - 1]):
-                self.solve(nums[i + 1:], target - nums[i], comb + [nums[i]], result)
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            if nums[i] > target:
+                break
+            self.solve(nums[i + 1:], target - nums[i], comb + [nums[i]], result)

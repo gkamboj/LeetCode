@@ -8,6 +8,9 @@ class Solution:
         if target == 0:
             result.append(comb)
             return
+        
+        if target < 0:
+            return
             
         for i in range(len(nums)):
             if nums[i] <= target and (i == 0 or nums[i] != nums[i - 1]):

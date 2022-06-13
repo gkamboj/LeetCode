@@ -1,16 +1,14 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
-        self.solve(sorted(candidates), [], result, target)
+        self.solve(sorted(candidates), target, [], result)
         return result
     
-    def solve(self, nums, comb, result, target):
+    def solve(self, nums, target, comb, result):
         if target == 0:
             result.append(comb)
             return
-        
+            
         for i in range(len(nums)):
-            if nums[i] > target:
-                break
-            if i == 0 or nums[i] != nums[i - 1]:
-                self.solve(nums[i + 1:], comb + [nums[i]], result, target - nums[i])
+            if nums[i] <= target and (i == 0 or nums[i] != nums[i - 1]):
+                self.solve(nums[i + 1:], target - nums[i], comb + [nums[i]], result)

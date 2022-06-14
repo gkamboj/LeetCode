@@ -1,13 +1,12 @@
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()
-        result, prev = [[]], -11
-        for num in nums:
-            if num != prev:
-                sets = [subset + [num] for subset in result]
-            else:
-                sets = [subset + [num] for subset in sets]
-            result += sets
-            prev = num
+        result = []
+        self.solve(sorted(nums), result, [])
         return result
-            
+    
+    def solve(self, nums, result, subset):
+        result.append(subset)
+        for ind in range(len(nums)):
+            if ind > 0 and nums[ind] == nums[ind - 1]:
+                continue
+            self.solve(nums[ind + 1:], result, subset + [nums[ind]])

@@ -1,19 +1,16 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        return self.solve(nums)
-    
-    
-    def solve(self, nums):
-        if len(nums) == 1:
-            return [nums[:]]
-        
         result = []
-        for ind in range(len(nums)):
-            num = nums.pop(0)
-            perms = self.solve(nums)
-            for perm in perms:
-                perm.append(num)
-            nums.append(num)
-            result += perms
-            
+        self.solve(nums, 0, result)
         return result
+    
+    
+    def solve(self, nums, ind, result):
+        if ind == len(nums):
+            result.append(nums[:])
+            return
+        
+        for i in range(ind, len(nums)):
+            nums[i], nums[ind] = nums[ind], nums[i]
+            self.solve(nums, ind + 1, result)
+            nums[i], nums[ind] = nums[ind], nums[i]

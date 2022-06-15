@@ -6,35 +6,34 @@ class Solution:
         Do not return anything, modify board in-place instead.
         """
         d = defaultdict(int)
-        for i in range(len(board)):
-            for j in range(len(board[0])):
-                if board[i][j] != '.':
-                    self.updateVals(i, j, board, board[i][j], d, True, board[i][j])
+        for row in range(len(board)):
+            for col in range(len(board)):
+                if board[row][col] != '.':
+                    self.update(board, d, row, col, board[row][col], True, board[row][col])
         self.solve(board, d)
         
-    
+        
     def solve(self, board, d):
-        for i in range(len(board)):
-            for j in range(len(board[0])):
-                if board[i][j] == '.':
+        for row in range(len(board)):
+            for col in range(len(board)):
+                if board[row][col] == '.':
                     for c in range(1, 10):
-                        if self.isValid(i, j, d, str(c)):
-                            self.updateVals(i, j, board, str(c), d, True, str(c))
+                        if self.isValid(board, d, row, col, str(c)):
+                            self.update(board, d, row, col, str(c), True, str(c))
                             if self.solve(board, d):
                                 return True
-                            self.updateVals(i, j, board, str(c), d, False, '.')
+                            self.update(board, d, row, col, str(c), False, '.')
                     return False
         return True
-                        
-                        
-    def isValid(self, row, col, d, val):
-        if d[str(row) + 'r' + val] or d[str(col) + 'c' + val] or d[str(row // 3 * 3) + '-' + val + '-' + str(col//3 * 3)]:
-            return False
-        return True
-        
     
     
-    def updateVals(self, row, col, board, val, d, toSet, newVal):
-        toSetVal = int(toSet)
-        d[str(row) + 'r' + val], d[str(col) + 'c' + val], d[str(row // 3 * 3) + '-' + val + '-' + str(col//3 * 3)] = toSetVal, toSetVal, toSetVal
+    def isValid(self, board, d, row, col, val):
+        if not d[str(row) + 'r' + val] and not d[str(col) + 'c' + val] and not d[str(row // 3 * 3) + 'b' + str(col // 3 * 3) + '-' + val]:
+            return True
+        return False
+    
+    def update(self, board, d, row, col, val, toSet, newVal):
+        d[str(row) + 'r' + val], d[str(col) + 'c' + val], d[str(row // 3 * 3) + 'b' + str(col // 3 * 3) + '-' + val] = int(toSet), int(toSet), int(toSet)
         board[row][col] = newVal
+        
+        

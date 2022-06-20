@@ -6,6 +6,9 @@ class Solution:
         k -= 1
         while n > 0:
             n -= 1
+            if k == 0:
+                ans += ''.join(l)
+                break
             val, k = k // m.factorial(n), k % m.factorial(n)
             ans += l[val]
             l.remove(l[val])

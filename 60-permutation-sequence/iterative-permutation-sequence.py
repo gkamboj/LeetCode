@@ -2,14 +2,15 @@ import math as m
 
 class Solution:
     def getPermutation(self, n: int, k: int) -> str:
-        l, ans = [str(i + 1) for i in range(n)], ''
+        l, ans, fact = [str(i + 1) for i in range(n)], '', m.factorial(n - 1)
         k -= 1
         while n > 0:
             n -= 1
             if k == 0:
                 ans += ''.join(l)
                 break
-            val, k = k // m.factorial(n), k % m.factorial(n)
+            val, k = k // fact, k % fact
+            fact //= n
             ans += l[val]
             l.remove(l[val])
         return ans

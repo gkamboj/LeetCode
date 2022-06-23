@@ -13,3 +13,7 @@ class Solution:
             self.solve(comb + '(', result, opened + 1, closed, n)
         if closed < opened:
             self.solve(comb + ')', result, opened, closed + 1, n)
+            
+# Approach: See https://leetcode.com/problems/generate-parentheses/discuss/10100/Easy-to-understand-Java-backtracking-solution and its comments:
+# (i) https://leetcode.com/problems/generate-parentheses/discuss/10100/Easy-to-understand-Java-backtracking-solution/10980 
+# (ii) https://leetcode.com/problems/generate-parentheses/discuss/10100/Easy-to-understand-Java-backtracking-solution/128130

@@ -5,7 +5,7 @@ class Solution:
         intervals.sort(key=lambda x: x[0])
         result, currInterval = [], intervals[0]
         for interval in intervals[1:]:
-            if not (currInterval[1] < interval[0] or interval[1] < currInterval[0]):
+            if interval[0] <= currInterval[1]:
                 currInterval[1] = max(interval[1], currInterval[1])
                 currInterval[0] = min(interval[0], currInterval[0])
             else:

@@ -11,3 +11,4 @@ class Solution:
                 end -= 1
         return count % (10 ** 9 + 7)
     
+# Approach: For every (start, end) pair, add all subsequences with minimum number as nums[start] to the count

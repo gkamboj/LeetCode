@@ -6,3 +6,5 @@ class Solution:
             if countDict[num] == 2:
                 return True
         return False
+    
+# Approach: defaultdict for default value 0 if key is not present in dictionary

@@ -8,3 +8,4 @@ class Solution:
             tDict[t[ind]] += 1
         return sDict == tDict
         
+# Approach: Create a dictionary each for respective strings to store frequency of each character. If both dictionaries are same after iteration, return True, else return False.

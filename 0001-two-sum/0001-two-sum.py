@@ -5,3 +5,5 @@ class Solution:
             if (target - val) in inDict:
                 return [inDict[target - val], ind]
             inDict[val] = ind
+            
+#Approach: One-pass hash table (3rd approach from solutions)

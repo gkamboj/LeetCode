@@ -15,3 +15,4 @@ class Solution:
                     result += ls
                 else:
                     return result
+                    

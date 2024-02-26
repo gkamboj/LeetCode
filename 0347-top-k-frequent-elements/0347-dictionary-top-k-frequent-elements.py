@@ -16,3 +16,4 @@ class Solution:
                 else:
                     return result
                     
+#Approach: Create a list of lists to store the nums elements for every frequency, with the index of list acting as the frequency value. Refer for more detail: https://leetcode.com/problems/top-k-frequent-elements/discuss/81602/Java-O(n)-Solution-Bucket-Sort

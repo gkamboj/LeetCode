@@ -1,30 +1,28 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        for i in range(len(board)):
-            for j in range(len(board[0])):
-                if not self.isValid(board, i, j):
+        for rowInd in range(len(board)):
+            for colInd in range(len(board[rowInd])):
+                if not self.isValidCell(board, rowInd, colInd):
                     return False
         return True
-            
-        
-        
-    def isValid(self, board, rowInd, colInd):
-        if board[rowInd][colInd] == '.':
+    
+    def isValidCell(self, board, rowInd, colInd):
+        if board[rowInd][colInd] == ".":
             return True
         
-        for i in range(len(board)):
-            if i != rowInd and board[rowInd][colInd] == board[i][colInd]:
+        val = board[rowInd][colInd]
+        
+        for ind in range(len(board[rowInd])):
+            if ind != colInd and board[rowInd][ind] == val:
+                return False
+            if ind != rowInd and board[ind][colInd] == val:
                 return False
             
-        for i in range(len(board[0])):
-            if i != colInd and board[rowInd][colInd] == board[rowInd][i]:
-                return False
-            
-        for i in range(rowInd//3 * 3, rowInd//3 * 3 + 3):
-            for j in range(colInd//3 * 3, colInd//3 * 3 + 3):
-                if (i != rowInd or j != colInd) and board[rowInd][colInd] == board[i][j]:
+        for boxRowInd in range(3 * (rowInd//3), 3 * (rowInd//3) + 3):
+            for boxColInd in range(3 * (colInd//3), 3 * (colInd//3) + 3):
+                if boxRowInd != rowInd and boxColInd != colInd and board[boxRowInd][boxColInd] == val:
                     return False
-                
+        
         return True
     
 # Approach: This is iterative approach. For every matrix value, check if it's valid. To check validity, 4 checks are needed: value ('.' or not), repetition in the row, repetition in the column and repetition in the sub-square.

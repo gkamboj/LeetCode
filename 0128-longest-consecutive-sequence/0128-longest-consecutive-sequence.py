@@ -9,3 +9,5 @@ class Solution:
                     num += 1
                 result = max(result, count)
         return result
+    
+# Approach: https://leetcode.com/problems/longest-consecutive-sequence/discuss/41057/Simple-O(n)-with-Explanation-Just-walk-each-streak    

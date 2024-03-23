@@ -25,8 +25,7 @@ class Solution:
             mid.next = start_next
             start = start_next
             mid = mid_next
-        if mid:
-            prev.next = mid
+        prev.next = mid
         
         
     

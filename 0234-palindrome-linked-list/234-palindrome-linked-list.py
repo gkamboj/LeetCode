@@ -5,27 +5,26 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        if not head.next:
-            return True
         slow, fast = head, head
-        while fast and fast.next and fast.next.next:
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        revHead = self.reverse(slow.next)
-        while revHead:
-            if head.val != revHead.val:
+        mid = self.reverseList(slow)
+        while mid:
+            if head.val != mid.val:
                 return False
             head = head.next
-            revHead = revHead.next
+            mid = mid.next
         return True
-        
-    def reverse(self, head):
-        prev = None
-        while head:
-            newHead = head.next
-            head.next = prev
-            prev = head
-            head = newHead
+    
+    def reverseList(self, node):
+        curr, prev = node, None
+        while curr:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
         return prev
     
-#Approach: Reverse the list from next element of middle element. Then match each corresponding element starting from head and mid. Keep in mind boundary condition as well as while condition when finding mid (don't forget to check fast.next.next)
+#Approach: Reverse the list from next element of middle element. Then match each corresponding element starting from head and mid.
+# Observe the use of mid in line-13 while condition instead of head because first half may have one more node in case of even number of nodes.

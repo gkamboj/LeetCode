@@ -2,9 +2,9 @@ class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         result = set()
         nums.sort()
-        for ind in range(len(nums)):
+        for ind in range(len(nums) - 2):
             target = -1 * nums[ind]
-            start, end = 0, len(nums) - 1
+            start, end = ind + 1, len(nums) - 1
             while start < end:
                 if start == ind: start += 1
                 elif end == ind: end -= 1

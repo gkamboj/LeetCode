@@ -9,3 +9,7 @@ class Solution:
             slow = nums[slow]
             fast = nums[fast]
         return slow
+    
+# Approach: 2-pointers using Floyd's cycle/Hare-Tortoise algo. Refer following:
+# 1. https://keithschwarz.com/interesting/code/?dir=find-duplicate
+# 2. https://leetcode.com/problems/find-the-duplicate-number/discuss/72846/My-easy-understood-solution-with-O(n)-time-and-O(1)-space-without-modifying-the-array.-With-clear-explanation.

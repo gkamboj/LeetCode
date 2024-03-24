@@ -9,3 +9,5 @@ class Solution:
                 result = max(result, height[end] * (end - start))
                 end -= 1
         return result
+    
+# Approach: 2-pointers. Find area of every rectangle, and move the pointer of lower height line.

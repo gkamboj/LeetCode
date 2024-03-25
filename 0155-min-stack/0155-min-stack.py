@@ -32,3 +32,5 @@ class Node:
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
+
+# Approach: Make stack of custom Node objects instead of values to maintain minimum value till every value.

@@ -11,3 +11,5 @@ class Solution:
             else:
                 return False
         return False if stack else True
+    
+# Approach: Use dictionary to store brackets and stack for LIFO.

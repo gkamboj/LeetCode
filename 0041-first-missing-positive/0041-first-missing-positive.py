@@ -6,9 +6,13 @@ class Solution:
             if num <= 0 or num > len(nums):
                 nums[ind] = 1
         if not one_present: return 1
-        else:
-            for num in nums:
-                if nums[abs(num) - 1] > 0: nums[abs(num) - 1] *= -1
+        print(nums)
+        for ind, num in enumerate(nums):
+            if nums[abs(num) - 1] > 0:
+                nums[abs(num) - 1] *= -1
+            
+        print(nums)
         for ind in range(len(nums)):
-            if nums[ind] > 0: return ind + 1
+            if nums[ind] > 0:
+                return ind + 1
         return len(nums) + 1

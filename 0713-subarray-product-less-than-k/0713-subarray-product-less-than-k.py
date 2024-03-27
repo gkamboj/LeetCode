@@ -16,3 +16,5 @@ class Solution:
             right += 1
         
         return ans
+    
+# Approach: Sliding window. Refer approach-1 of the official solution.

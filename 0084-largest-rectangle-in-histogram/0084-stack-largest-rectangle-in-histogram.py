@@ -1,5 +1,3 @@
-import math 
-
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
         stack, ans = [], 0

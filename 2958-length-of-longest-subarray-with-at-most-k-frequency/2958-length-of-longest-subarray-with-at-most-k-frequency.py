@@ -9,3 +9,7 @@ class Solution:
                 start += 1
             ans = max(ans, ind - start + 1)
         return ans
+    
+# Approach: Sliding window -> Maintain frequency dictionary to store the count. Whenever frequency of
+# current element surpass k, keep removing from dictionary until it reaches k. See approach-1 of official
+# solution for more detail.

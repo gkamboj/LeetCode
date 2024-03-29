@@ -12,3 +12,5 @@ class Solution:
                 right = mid - 1
             else: left = mid + 1
         return ans
+    
+# Approach: Reduced if-else checks than v1 submission

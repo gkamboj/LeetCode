@@ -12,3 +12,5 @@ class Solution:
             elif mid == 1 or not isBadVersion(mid - 1):
                 return mid
             else: right = mid - 1
+
+# Approach-1: Binary search using template-1: https://leetcode.com/explore/learn/card/binary-search       

@@ -9,5 +9,6 @@ class Solution:
                 return False
         return True
     
-""" Approach: Create a map to store mapping of t's chars with chars of s. If at anytime, s[ind] does not
-match with existing value of dict[t[ind]], return False """
+""" Approach: If number of unique characters of bothe strings are not matching, return False as strings cannot
+be isomorphic in that case. Create a map to store mapping of t's chars with chars of s. If at anytime, s[ind] 
+does not match with existing value of dict[t[ind]], return False """

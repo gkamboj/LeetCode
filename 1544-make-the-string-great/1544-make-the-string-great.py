@@ -4,9 +4,9 @@ class Solution:
         if n < 2: return s
         ans, ind = '', 0
         while ind < n:
-            if ind < n -1 and self.areCharsToBeReplaced(s[ind], s[ind + 1]):
+            if ind < n -1 and abs(ord(s[ind+1]) - ord(s[ind])) == 32:
                 ind += 2
-            elif ans and self.areCharsToBeReplaced(ans[-1], s[ind]):
+            elif ans and abs(ord(ans[-1]) - ord(s[ind])) == 32:
                 ans = ans[:-1]
                 ind += 1
             else:
@@ -16,6 +16,4 @@ class Solution:
         return ans
             
             
-    def areCharsToBeReplaced(self, char1, char2):
-        return (char1.islower() and char2.isupper() and char2 == char1.upper()) \
-        or (char2.islower() and char1.isupper() and char1 == char2.upper())
+    

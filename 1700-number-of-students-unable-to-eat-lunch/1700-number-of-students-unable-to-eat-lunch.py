@@ -12,3 +12,7 @@ class Solution:
                 students.append(top_student)
         return 0
             
+''' Approach: Keep maintaining the sum of students array. If there are no matching students with preference
+of top sandwich (checked by line-8 condition), return False. If array becomes empty, means all sandwiches
+are consumed. Return 0 in that case.
+'''        

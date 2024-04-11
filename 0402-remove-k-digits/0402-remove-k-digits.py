@@ -13,3 +13,8 @@ class Solution:
         for digit in stack[:n-k]:
             ans += digit
         return ans.lstrip('0') or str('0')
+    
+''' Approach: Use a stack that keep sorted ascendingly by removing elements till top is less than current 
+element while adding current. Pick first (n - k) digits at the end. Handle edge cases like ignoring leading 
+zeroes and returning zero for empty string answer.
+'''    

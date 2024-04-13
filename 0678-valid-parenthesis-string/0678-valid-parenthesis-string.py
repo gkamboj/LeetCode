@@ -1,26 +1,17 @@
 class Solution:
     def checkValidString(self, s: str) -> bool:
-        open_count = 0
-        close_count = 0
-        length = len(s) - 1
+        stack, star_stack = [], []
+        for ind, char in enumerate(s):
+            if char == '(':
+                stack.append(ind)
+            elif char == ')':
+                if stack: stack.pop()
+                elif star_stack: star_stack.pop()
+                else: return False
+            else: star_stack.append(ind)
         
-        # Traverse the string from both ends simultaneously
-        for i in range(length + 1):
-            # Count open parentheses or asterisks
-            if s[i] == '(' or s[i] == '*':
-                open_count += 1
-            else:
-                open_count -= 1
-            
-            # Count close parentheses or asterisks
-            if s[length - i] == ')' or s[length - i] == '*':
-                close_count += 1
-            else:
-                close_count -= 1
-            
-            # If at any point open count or close count goes negative, the string is invalid
-            if open_count < 0 or close_count < 0:
-                return False
+        while stack and star_stack and stack[-1] < star_stack[-1]:
+            stack.pop()
+            star_stack.pop()
         
-        # If open count and close count are both non-negative, the string is valid
-        return True
+        return not stack

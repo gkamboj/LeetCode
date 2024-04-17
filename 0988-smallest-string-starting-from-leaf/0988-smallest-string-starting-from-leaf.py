@@ -17,3 +17,8 @@ class Solution:
             if curr.right:
                 stack.append((curr.right, chr(ord('a') + curr.right.val) + val))
         return ans
+    
+'''
+Approach: This question is exactly similar to 129. Sum Root to Leaf Numbers. Find the minimum value here
+instead of sum.
+'''

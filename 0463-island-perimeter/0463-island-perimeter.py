@@ -1,14 +1,11 @@
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
-        m, n, perimeter = len(grid), len(grid[0]), 0
-
-        for i in range(m):
-            for j in range(n):
-                perimeter += 4*grid[i][j]
-                if i > 0:   perimeter -= grid[i][j]*grid[i-1][j]
-                if i < m-1: perimeter -= grid[i][j]*grid[i+1][j]
-                if j > 0:   perimeter -= grid[i][j]*grid[i][j-1]
-                if j < n-1: perimeter -= grid[i][j]*grid[i][j+1]
-                    
-        return perimeter
-            
+        ans = 0
+        for row in range(len(grid)):
+            for col in range(len(grid[0])):
+                if grid[row][col]:
+                    if not row or not grid[row - 1][col]: ans += 1
+                    if not col or not grid[row][col - 1]: ans += 1
+                    if row == len(grid) - 1 or not grid[row + 1][col]: ans += 1
+                    if col == len(grid[0]) - 1 or not grid[row][col + 1]: ans += 1
+        return ans

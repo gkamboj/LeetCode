@@ -26,7 +26,8 @@ class Solution:
     
 '''
 Approach: This is advanced version LC-200. Instead of finding just islands, we have to find coordinates also.
-
+To find coordinates, add to answer the current coordinates whenever 1 is encountered. In DFS, update end cell 
+coordinates of last part of answer after every iteration.
 '''
         
         

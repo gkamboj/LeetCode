@@ -9,3 +9,7 @@ class Solution:
                     if row == len(grid) - 1 or not grid[row + 1][col]: ans += 1
                     if col == len(grid[0]) - 1 or not grid[row][col + 1]: ans += 1
         return ans
+    
+'''
+Approach: For every cell, check all vertices and add eligible parameter to answer.
+'''    

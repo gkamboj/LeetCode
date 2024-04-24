@@ -5,7 +5,12 @@ class Solution:
         elif n == 2:
             return 1
         else:
-            arr = [0, 1, 1]
-            while len(arr) < n + 1:
-                arr.append(arr[-1] + arr[-2] + arr[-3])
-            return arr[-1]
+            a, b, c = 0, 1, 1
+            k = 3
+            while k < n:
+                s = a + b + c
+                a = b
+                b = c
+                c = s
+                k += 1
+            return a + b + c

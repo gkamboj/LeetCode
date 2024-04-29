@@ -11,3 +11,8 @@ class Solution:
             count += num & 1
             num //= 2
         return count
+    
+'''
+Approach: In order to have XOR of nums equal to k, XOR of nums with k should be zero. So, if all set bits of
+XOR(nums) ^ k are reversed, condition will be met. Hence, the answer is number of set bits in XOR(nums) ^ k.
+'''

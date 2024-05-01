@@ -6,3 +6,7 @@ class Solution:
                 word = word[:ind+1][::-1] + word[ind+1:]
                 break
         return word[:-1]
+    
+'''
+Approach: Self-explanatory code, refer official solutions for more approaches.
+'''

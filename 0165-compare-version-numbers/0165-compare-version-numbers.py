@@ -9,3 +9,7 @@ class Solution:
             elif int(val1) < int(val2):
                 return -1
         return 0
+    
+'''
+Approach: Split both strings from '.' and compare the integer part of every member of splitted list.
+'''

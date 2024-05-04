@@ -9,3 +9,8 @@ class Solution:
             end -= 1
             ans += 1
         return ans
+    
+'''
+Approach: Use 2 pointers, increase start pointer if people[start] + people[end] <= limit because this allows
+wight of person at start index also to be included to the current boat.
+'''

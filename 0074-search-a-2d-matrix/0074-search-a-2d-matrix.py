@@ -11,3 +11,7 @@ class Solution:
             else:
                 start = mid + 1
         return False
+    
+'''
+Approach: treat 2D array as 1D array by considering its lenth as m * n and apply binary search.
+'''

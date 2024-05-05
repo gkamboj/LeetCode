@@ -8,3 +8,8 @@ class Solution:
             elif nums[mid] > target: end = mid - 1
             else: start = mid + 1
         return -1
+    
+'''
+Approach: Implementation of Binary Search. Do check LC Binary Search explore card for more conceptual
+understanding: https://leetcode.com/explore/learn/card/binary-search/
+'''

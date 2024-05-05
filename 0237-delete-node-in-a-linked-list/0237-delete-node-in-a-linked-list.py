@@ -12,3 +12,8 @@ class Solution:
         """
         node.val = node.next.val
         node.next = node.next.next
+        
+'''
+Approach: Set node's value to next node's value and remove next node by pointing current node to next to next
+node
+'''

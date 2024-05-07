@@ -26,3 +26,8 @@ class Solution:
             prev = curr
             curr = nxt
         return prev
+    
+'''
+Approach: Reverse the list and start doubling every node's value. Consider the carry overs and create new 
+node at end if carry part is still there. Reverse the final list again to get answer's head.
+'''

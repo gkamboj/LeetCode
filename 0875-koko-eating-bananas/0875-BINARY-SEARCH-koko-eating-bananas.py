@@ -19,7 +19,7 @@ class Solution:
         return val
 
 '''
-Approach: Binary search - minimum hours can be len(piles) [when speed = max(piles)] and max can be max(piles) [when speed = 1]. Start from mid of these
+Approach: Binary search - minimum speed can be 1 and max can be max(piles). Start from mid of these
 and keep applying binary search till start <= end.
 
 Check this for binary search templates: https://leetcode.com/problems/koko-eating-bananas/discuss/769702/Python-Clear-explanation-Powerful-Ultimate-Binary-Search-Template.-Solved-many-problems

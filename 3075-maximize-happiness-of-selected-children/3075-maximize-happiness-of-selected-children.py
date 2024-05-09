@@ -5,3 +5,7 @@ class Solution:
         for ind in range(k):
             ans += max(happiness[ind] - ind, 0)
         return ans
+    
+'''
+Approach: Sort the array and take top-k elements along with adjusting the given conditions.
+'''

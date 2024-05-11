@@ -14,7 +14,7 @@ class Solution:
                 node.next = list2
                 list2 = list2.next
             node = node.next
-        node.next = list2 if list2 else list1
+        node.next = list2 or list1 # Add whichever list is not null yet
         return dummy.next
     
 '''

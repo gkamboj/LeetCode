@@ -20,7 +20,10 @@ class Solution:
             ans.next = list2
         return dummy.next
     
-#Approach: This is iterative approach using extra variable (that is not in-place). NWe are using dummy along with ans because at the end, ans will point to a node in between but we need to return head, so dummy.next will give the actual first node of answer (first node being 0)
+'''
+Approach: This is iterative approach using extra variable (that is not in-place). We are using dummy along with ans because at the end, 
+ans will point to a node in between but we need to return head, so dummy.next will give the actual first node of answer (first node being 0)
+'''
 
 #See other submissions for alternative approaches.
         

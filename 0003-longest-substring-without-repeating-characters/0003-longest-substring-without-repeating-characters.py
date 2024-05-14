@@ -6,8 +6,8 @@ class Solution:
                 # Characters before start index are irrelevant, so update start only if repeated char
                 # is after index start
                 start = counter[char] + 1
-            # else:
-            ans = max(ans, ind - start + 1)
+            else:
+                ans = max(ans, ind - start + 1)
             counter[char] = ind
         return ans
     

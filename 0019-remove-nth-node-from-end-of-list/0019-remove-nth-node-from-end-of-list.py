@@ -24,3 +24,7 @@ class Solution:
             prev = node
             node = nxt
         return prev
+    
+'''
+Approach: Reverse the list, remove nth node and again reverse. Handle edge cases separately like n = 1
+'''

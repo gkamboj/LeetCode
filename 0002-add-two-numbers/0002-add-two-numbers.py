@@ -5,8 +5,6 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        # l1 = self.reverse(l1)
-        # l2 = self.reverse(l2)
         val = l1.val + l2.val
         carry = val // 10
         ans = new_head = ListNode(val % 10)
@@ -27,19 +25,7 @@ class Solution:
             ans = ans.next
         if carry: ans.next = ListNode(carry)
         return new_head
-    
-    
-    def reverse(self, head):
-        curr, prev = head, None
-        while curr:
-            nxt = curr.next
-            curr.next = prev
-            prev = curr
-            curr = nxt
-        return prev
-            
-        
-# [9,4,2]
-# [9,4,6,5]
-# 10407
-            
+
+'''
+Approach: Traverse over both list till they are not null, and remaining list after that. Handle carry at every step.
+'''

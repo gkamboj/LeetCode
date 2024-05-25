@@ -6,23 +6,21 @@
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         if k == 1: return head
-        node, count, start, prev = head, 1, head, None
-        ans = None
+        node, count, start, dummy = head, 1, head, ListNode()
+        prev = dummy
         while node:
             if not count % k:
                 nxt = node.next
-                temp = self.reverse(prev, start, nxt)
-                if not ans: ans = temp
+                self.reverse(prev, start, nxt)
                 prev = start
                 start = nxt
             else:
                 nxt = node.next
             node = nxt
             count += 1
-        return ans
+        return dummy.next
                 
     def reverse(self, bef, node, end):
-        # print(f'bef: {bef}, node: {node}, end: {end}')
         prev = end
         while node != end:
             nxt = node.next
@@ -31,3 +29,8 @@ class Solution:
             node = nxt
         if bef: bef.next = prev
         return prev
+    
+'''
+Approach: Reverse lists k at a time, but pass prev and end from main method to mainatain the continuity.
+Use dummy node for answer to avoid handling edge cases.
+'''

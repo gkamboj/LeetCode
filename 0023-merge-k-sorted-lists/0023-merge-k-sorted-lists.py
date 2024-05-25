@@ -30,3 +30,8 @@ class Solution:
         node.next = l1 or l2
         return ans.next
     
+'''
+Approach: Merge 2 lists at a time, and continue this till only one list remains. Complexity will be n * 
+(number of steps) = n * log k [log k because list of size k is getting halved after every for loop].
+'''
+    

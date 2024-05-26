@@ -6,15 +6,14 @@
 #         self.right = right
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        stack, depth = [(root, 1)], 0
-        while stack:
-            node, curr_depth = stack.pop()
-            if node:
-                depth = max(curr_depth, depth)
-                stack.append((node.left, curr_depth + 1))
-                stack.append((node.right, curr_depth + 1))
+        if not root: return 0
+        queue, depth = [root], 0
+        while queue:
+            depth += 1
+            for _ in range(len(queue)):  
+                node = queue.pop(0)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
         return depth
-'''
-Approach: Iterative - using DFS, store node and depth in stack, and keep updating stack with child nodes 
-after every pop.
-'''

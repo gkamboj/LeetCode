@@ -7,18 +7,20 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root: return 0
-        stack, depth = [root], 0
-        while stack:
+        queue, depth = [root], 0
+        while queue:
             depth += 1
-            temp = []
-            for node in stack:            
+            for _ in range(len(queue)):  
+                node = queue.pop(0)
                 if node.left:
-                    temp.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    temp.append(node.right)
-            stack = temp
+                    queue.append(node.right)
         return depth
+        
 '''
 Approach: Iterative - using BFS, update stack with all child nodes at every level and increment depth till
-stack is not empty.
+queue is not empty.
+
+Note: Explore usage deque instead of list
 '''

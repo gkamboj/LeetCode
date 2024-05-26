@@ -18,3 +18,7 @@ class Solution:
                 stack.append(node.right)
         return root
                 
+'''
+Approach: Iterative code - swap left and right nodes for every eligible node (a node is eligible if it has 
+at least one child node). For every popped out node, add its eligible child nodes to stack.
+'''

@@ -6,19 +6,19 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if not root or not (root.left or root.right):
+        if not root:
             return root
         stack = [root]
         while stack:
             node = stack.pop()
             node.left, node.right = node.right, node.left
-            if node.left and (node.left.left or node.left.right):
+            if node.left:
                 stack.append(node.left)
-            if node.right and (node.right.left or node.right.right):
+            if node.right:
                 stack.append(node.right)
         return root
                 
 '''
-Approach: Iterative code - swap left and right nodes for every eligible node (a node is eligible if it has 
-at least one child node). For every popped out node, add its eligible child nodes to stack.
+Approach: Iterative code - swap left and right nodes if either of the both is present. For every popped out node,
+add its eligible child nodes to stack.
 '''

@@ -18,3 +18,9 @@ class Solution:
         
         dfs(root)
         return self.ans
+    
+'''
+Approach: Find depth of left as well as right part of tree (including root) recursively and take maximum of
+those less 2 for diameter. Refer in-line comments and NC video (https://www.youtube.com/watch?v=bkxqA8Rfv04) 
+for detail.
+'''

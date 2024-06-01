@@ -13,3 +13,10 @@ class Solution:
             else:
                 ind += 1
         return curr
+    
+'''
+Approach: Whenever a number is not equal to its previous, check subsequent also and assign them to curr and
+curr + 1.
+
+Check other solution for generic approach for solving unique elements appearing at most k times.
+'''

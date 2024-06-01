@@ -11,13 +11,11 @@ class Solution:
     def helper(self, node):
         if not node:
             return 0
-        left = self.helper(node.left)
-        if left == -1:
+        if ((left := self.helper(node.left)) == -1 or
+            (right := self.helper(node.right)) == -1 or
+            abs(left - right) > 1):
             return -1
-        right = self.helper(node.right)
-        if right == -1 or abs(left - right) > 1:
-            return -1
-        return max(left, right) + 1
+        return max(left, right)  + 1
     
     
     

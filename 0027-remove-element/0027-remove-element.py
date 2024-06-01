@@ -1,19 +1,12 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        nums.sort()
-        start, end = -1, -1
+        curr = 0
         for ind, num in enumerate(nums):
-            if num == val:
-                if start == -1:
-                    start = ind
-                end = ind
-            if num > val:
-                break
-        if start == -1:
-            return len(nums)
-        ind = end + 1
-        while ind < len(nums):
-            nums[start] = nums[ind]
-            ind += 1
-            start += 1
-        return start
+            if val != num:
+                nums[curr] = num
+                curr += 1
+        return curr
+    
+'''
+Approach: Iterate over array & maintain curr pointer to place elements whenever valid element is encountered.
+'''

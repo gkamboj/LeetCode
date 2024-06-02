@@ -17,3 +17,8 @@ class Solution:
             return self.lcsHelper(root.right, minVal, maxVal)
         else:
             return self.lcsHelper(root.left, minVal, maxVal)
+        
+'''
+Approach: Recursive - If root node value is in between both the nodes (inclusive of them), then both nodes are on opposite side of root node, hence 
+root node has to be LCS. If not, then go left or right depending on if root node value is smaller or greater than value of both the nodes.
+'''

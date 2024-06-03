@@ -16,3 +16,8 @@ class Solution:
                 if node.right:
                     queue.append((node.right, max(node.val, maxInPath)))
         return ans
+    
+'''
+Approach: Iterative - using BFS level order template. Store the maxTillNow along with the node in queue, and check if current node is good node in 
+every iteration.
+'''

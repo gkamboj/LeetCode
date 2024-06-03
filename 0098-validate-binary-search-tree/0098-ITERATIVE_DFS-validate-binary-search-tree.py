@@ -20,6 +20,6 @@ class Solution:
         return True
                 
 '''
-Approach: Iterative - inorder template. Before adding to result array, check if value is not greater than last value of result, return False. If while
+Approach: Iterative - inorder DFS template. Before adding to result array, check if value is not greater than last value of result, return False. If while
 loop completes successfully, return True.
 '''

@@ -13,11 +13,13 @@ class Solution:
                 curr = curr.left
             else:
                 curr = stack.pop()
+                if result and result[-1] >= curr.val:
+                    return False
                 result.append(curr.val)
                 curr = curr.right
-        for ind in range(1, len(result)):
-            if result[ind] <= result[ind - 1]:
-                return False
         return True
                 
-        
+'''
+Approach: Iterative - inorder template. Before adding to result array, check if value is not greater than last value of result, return False. If while
+loop completes successfully, return True.
+'''

@@ -6,18 +6,16 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        ans, queue = 0, deque([(root, root.val)])
-        while queue:
-            for _ in range(len(queue)):
-                node, maxInPath = queue.popleft()
-                if node.val >= maxInPath: ans += 1
-                if node.left:
-                    queue.append((node.left, max(node.val, maxInPath)))
-                if node.right:
-                    queue.append((node.right, max(node.val, maxInPath)))
+        return self.dfs(root, root.val)
+    
+    def dfs(self, root, maxVal):
+        if not root:
+            return 0
+        ans = 1 if root.val >= maxVal else 0
+        ans += self.dfs(root.left, max(root.val, maxVal))
+        ans += self.dfs(root.right, max(root.val, maxVal))
         return ans
     
 '''
-Approach: Iterative - using BFS level order template. Store the maxTillNow along with the node in queue, and check if current node is good node in 
-every iteration.
+Approach: Recursive - using DFS pre order template.
 '''

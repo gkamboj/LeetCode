@@ -8,13 +8,17 @@ class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         result, queue = [], deque([root])
         while queue:
-            val = -101
+            rightMost = None
             for _ in range(len(queue)):
                 node = queue.popleft()
                 if node:
-                    val = node.val
+                    rightMost = node
                     queue.append(node.left)
                     queue.append(node.right)
-            if val != -101: result.append(val)
+            if rightMost: result.append(rightMost.val)
         return result
-                    #[1,2,3,4,5,6,7,8,null,null,9,10,null,null,null,null,null,null,null,11,12]
+
+'''
+Approach: Iterative - Level order template. Add the rightmost node value to result instead of every node at a level. Note that we have taken variable
+(rightMost) for node insetad of value as taking value will fail the case at line 18 if node.val = 0.
+'''

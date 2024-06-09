@@ -18,3 +18,8 @@ class Solution:
         
         dfs(root)
         return self.ans
+    
+'''
+Approach: Recusive - DFS, & keep updating global ans variable for maximum sum. Since values can be negative,
+add left/right subtrees sum only if they are positive.
+'''

@@ -22,4 +22,6 @@ class Solution:
 '''
 Approach: Recusive - DFS, & keep updating global ans variable for maximum sum. Since values can be negative,
 add left/right subtrees sum only if they are positive.
+
+Check this or any other solution for iterative approach: https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39927/Iterative-Java-solution
 '''

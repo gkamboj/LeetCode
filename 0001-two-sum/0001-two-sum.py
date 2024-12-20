@@ -3,5 +3,5 @@ class Solution:
         hm = {}
         for ind, num in enumerate(nums):
             if (target - num) in hm:
-                return [ind, hm[target - num]]
+                return [hm[target - num], ind]
             hm[num] = ind

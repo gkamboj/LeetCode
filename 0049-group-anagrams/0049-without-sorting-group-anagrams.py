@@ -8,3 +8,5 @@ class Solution:
             result[tuple(curr)].append(val)
 
         return list(result.values())
+
+# Approach: Similar to approach with sorting, but using array to detect anagram words instead of sorting each word

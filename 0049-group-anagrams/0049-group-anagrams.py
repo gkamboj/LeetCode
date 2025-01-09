@@ -4,4 +4,3 @@ class Solution:
         for val in strs:
             result[''.join(sorted(val))].append(val)
         return list(result.values())
-        

@@ -7,12 +7,14 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
 ## Hash Table
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
 ## Sorting
 |  |
@@ -27,4 +29,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->

@@ -7,3 +7,5 @@ class Solution:
             result[ind] *= right
             right *= nums[ind]
         return result
+
+# Approach: Create result array and use it as prefix multiplication array. Then update it with suffix products.

@@ -33,4 +33,20 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+## Linked List
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+## Two Pointers
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+## Stack
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+## Recursion
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
 <!---LeetCode Topics End-->

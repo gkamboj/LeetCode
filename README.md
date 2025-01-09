@@ -25,6 +25,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -40,6 +41,7 @@ Collection of LeetCode questions
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
 | [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
 ## Stack
 |  |

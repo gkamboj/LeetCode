@@ -16,3 +16,9 @@ class Solution:
             if val == 0:
                 return ind + 1
         return len(nums) + 1
+
+# Approach: O(n) time with O(n) space.
+# (1) Check for cases when all numbers are negative or smallest non positive != 1. Return 1 for these cases.
+# (2) For remaining cases, create a helper array such that values at indexes present in original array are 1, else zero.
+# Return first non-zero index.
+# Return len(nums) + 1 if all values in helper are 1 (to handle cases when input is of all numbers from 1 to n)

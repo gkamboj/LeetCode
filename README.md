@@ -18,17 +18,20 @@ Collection of LeetCode questions
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
 ## Sorting
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
 ## String
 |  |
 | ------- |
 | [0006-zigzag-conversion](https://github.com/gkamboj/LeetCode/tree/master/0006-zigzag-conversion) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
 ## Prefix Sum
 |  |
 | ------- |

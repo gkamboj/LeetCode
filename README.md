@@ -6,6 +6,7 @@ Collection of LeetCode questions
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/gkamboj/LeetCode/tree/master/0001-two-sum) |
 | [0041-first-missing-positive](https://github.com/gkamboj/LeetCode/tree/master/0041-first-missing-positive) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
@@ -14,6 +15,7 @@ Collection of LeetCode questions
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/gkamboj/LeetCode/tree/master/0001-two-sum) |
 | [0041-first-missing-positive](https://github.com/gkamboj/LeetCode/tree/master/0041-first-missing-positive) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |

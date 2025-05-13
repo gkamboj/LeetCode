@@ -1,3 +1,5 @@
+import math
+
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         start, end, ans = len(piles), max(piles), max(piles)
@@ -17,6 +19,12 @@ class Solution:
         for pile in piles:
             val += -(pile // -speed)
         return val
+
+    def calculate_hours2(self, piles, speed):
+        hours = 0
+        for count in piles:
+            hours += math.ceil(count / speed)
+        return hours
 
 '''
 Approach: Binary search - minimum speed can be 1 and max can be max(piles). Start from mid of these

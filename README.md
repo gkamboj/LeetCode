@@ -10,6 +10,7 @@ Collection of LeetCode questions
 | [0036-valid-sudoku](https://github.com/gkamboj/LeetCode/tree/master/0036-valid-sudoku) |
 | [0041-first-missing-positive](https://github.com/gkamboj/LeetCode/tree/master/0041-first-missing-positive) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
@@ -89,8 +90,10 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/gkamboj/LeetCode/tree/master/0036-valid-sudoku) |
+| [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 ## Binary Search
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->

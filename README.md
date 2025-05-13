@@ -14,6 +14,7 @@ Collection of LeetCode questions
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -88,4 +89,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/gkamboj/LeetCode/tree/master/0036-valid-sudoku) |
+## Binary Search
+|  |
+| ------- |
+| [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
 <!---LeetCode Topics End-->

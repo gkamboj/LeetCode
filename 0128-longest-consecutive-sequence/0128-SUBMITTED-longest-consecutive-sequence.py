@@ -10,4 +10,9 @@ class Solution:
                 ans = max(ans, curr)
         return ans
     
-# Approach: https://leetcode.com/problems/longest-consecutive-sequence/discuss/41057/Simple-O(n)-with-Explanation-Just-walk-each-streak    
+# Approach: https://leetcode.com/problems/longest-consecutive-sequence/discuss/41057/Simple-O(n)-with-Explanation-Just-walk-each-streak  
+# Same approach can also be done using Dictionary/Map.
+
+# Notes:
+# 1. Line-4 -> for loop should be on st insead of st to reduce the extra iterations due to duplicates. LC gives TLE if nums is used.
+# 2. Line-3 -> ans should be initialized to 0, not 1. Initialising it to 1 will result in failure of [] case.

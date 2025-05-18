@@ -12,3 +12,5 @@ class Solution:
             elif not stack or chars[stack.pop()] != b:
                 return False
         return not stack
+
+# Approach: Use dictionary to store brackets and stack for LIFO.

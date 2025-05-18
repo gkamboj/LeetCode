@@ -14,6 +14,6 @@ class Solution:
 # Same approach can also be done using Dictionary/Map.
 
 # Notes:
-# 1. Line-4 -> for loop should be on st insead of st to reduce the extra iterations due to duplicates. LC gives TLE if nums is used.
+# 1. Line-4 -> for loop should be on st insead of nums to reduce the extra iterations due to duplicates. LC gives TLE if nums is used.
 # 2. Line-3 -> ans should be initialized to 0, not 1. Initialising it to 1 will result in failure of [] case.
-# 3. Line-6 -> Must check if (num - 1) not present in st to avoid redundant checks of numbers from already checked sequence
+# 3. Line-6 -> Must have "if (num - 1) not in st" to avoid redundant checks of numbers from already checked sequence

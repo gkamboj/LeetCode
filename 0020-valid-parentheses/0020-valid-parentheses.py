@@ -1,15 +1,14 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        brackets = {'[':']', '{':'}', '(':')'}
+        chars = {
+            '(' : ')',
+            '{' : '}',
+            '[' : ']'
+            }
         stack = []
-        for i in s:
-            if i in brackets:
-                stack.append(i)
-            elif i in brackets.values():
-                if not stack or brackets[stack.pop()] != i:
-                    return False
-            else:
+        for b in s:
+            if b in chars:
+                stack.append(b)
+            elif not stack or chars[stack.pop()] != b:
                 return False
-        return False if stack else True
-    
-# Approach: Use dictionary to store brackets and stack for LIFO.
+        return not stack

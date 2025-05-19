@@ -6,14 +6,16 @@
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         curr = ans_prev = ListNode()
-        n1, n2 = list1, list2
-        while n1 and n2:
-            if n1.val <= n2.val:
-                curr.next = n1
-                n1 = n1.next
+        curr.next = list1
+        while list1 and list2:
+            if list1.val <= list2.val:
+                list1 = list1.next
             else:
-                curr.next = n2
-                n2 = n2.next
+                nxt = curr.next
+                curr.next = list2
+                temp = list2.next
+                list2.next = nxt
+                list2 = temp
             curr = curr.next
-        curr.next = n1 or n2
+        curr.next = list1 or list2
         return ans_prev.next

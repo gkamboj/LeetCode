@@ -15,12 +15,5 @@ class Solution:
                 curr.next = n2
                 n2 = n2.next
             curr = curr.next
-        while n1:
-            curr.next = n1
-            curr = curr.next
-            n1 = n1.next
-        while n2:
-            curr.next = n2
-            curr = curr.next
-            n2 = n2.next
+        curr.next = n1 or n2
         return ans_prev.next

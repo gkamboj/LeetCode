@@ -64,6 +64,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+| [0206-reverse-linked-list](https://github.com/gkamboj/LeetCode/tree/master/0206-reverse-linked-list) |
 ## Two Pointers
 |  |
 | ------- |
@@ -85,6 +86,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+| [0206-reverse-linked-list](https://github.com/gkamboj/LeetCode/tree/master/0206-reverse-linked-list) |
 ## Divide and Conquer
 |  |
 | ------- |

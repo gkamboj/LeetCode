@@ -13,6 +13,7 @@ Collection of LeetCode questions
 | [0041-first-missing-positive](https://github.com/gkamboj/LeetCode/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/gkamboj/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/gkamboj/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -94,6 +95,7 @@ Collection of LeetCode questions
 ## Divide and Conquer
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
@@ -132,6 +134,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/gkamboj/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 ## Monotonic Stack
 |  |
 | ------- |

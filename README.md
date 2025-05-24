@@ -53,6 +53,7 @@ Collection of LeetCode questions
 | [0003-longest-substring-without-repeating-characters](https://github.com/gkamboj/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0006-zigzag-conversion](https://github.com/gkamboj/LeetCode/tree/master/0006-zigzag-conversion) |
 | [0020-valid-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
@@ -137,6 +138,7 @@ Collection of LeetCode questions
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/gkamboj/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 ## Monotonic Stack
@@ -153,4 +155,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/gkamboj/LeetCode/tree/master/0155-min-stack) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->

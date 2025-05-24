@@ -87,6 +87,7 @@ Collection of LeetCode questions
 | [0020-valid-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/gkamboj/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
+| [0155-min-stack](https://github.com/gkamboj/LeetCode/tree/master/0155-min-stack) |
 | [0739-daily-temperatures](https://github.com/gkamboj/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 ## Recursion
@@ -148,4 +149,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/gkamboj/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/gkamboj/LeetCode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->

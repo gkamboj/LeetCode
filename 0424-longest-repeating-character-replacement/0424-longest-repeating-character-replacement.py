@@ -4,12 +4,11 @@ class Solution:
         ans, start, end = 0, 0, 0
         while end < len(s):
             counter[s[end]] += 1
-            max_char = max(counter, key=counter.get)
-            if (end - start + 1) - counter[max_char] <= k:
-                ans = max(ans, end - start + 1)
-                end += 1
-            else:
+            max_freq = max(counter.values())
+            while (end - start + 1) - max_freq > k:
                 counter[s[start]] -= 1
-                counter[s[end]] -= 1
                 start += 1
+                max_freq = max(counter.values())
+            ans = max(ans, end - start + 1)
+            end += 1
         return ans

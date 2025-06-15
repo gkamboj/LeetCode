@@ -19,12 +19,10 @@ class Solution:
         mid, start, prev = self.reverseList(slow), head, None
         while start and mid:
             prev = mid
-            start_next = start.next
-            mid_next = mid.next
+            start_next, mid_next = start.next, mid.next
             start.next = mid
             mid.next = start_next
-            start = start_next
-            mid = mid_next
+            start, mid = start_next, mid_next
         prev.next = mid
         
         

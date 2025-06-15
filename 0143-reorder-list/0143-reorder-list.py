@@ -15,22 +15,24 @@ class Solution:
             prev = slow
             slow = slow.next
             fast = fast.next.next
-        prev.next = None
-        n1, n2 = head, self.reverseList(slow)
-        while n1 and n2:
-            curr = n2
-            temp1, temp2 = n1.next, n2.next
-            n1.next = n2
-            n2.next = temp1
-            n1, n2 = temp1, temp2
-        curr.next = n2
-
-
-    def reverseList(self, head):
-        curr, prev = head, None
+        prev.next = None            
+        mid, start, prev = self.reverseList(slow), head, None
+        while start and mid:
+            prev = mid
+            start_next, mid_next = start.next, mid.next
+            start.next = mid
+            mid.next = start_next
+            start, mid = start_next, mid_next
+        prev.next = mid
+        
+        
+    
+    def reverseList(self, node):
+        curr, prev = node, None
         while curr:
-            nxt = curr.next
+            temp = curr.next
             curr.next = prev
             prev = curr
-            curr = nxt
+            curr = temp
         return prev
+        

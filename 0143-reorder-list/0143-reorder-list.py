@@ -15,30 +15,33 @@ class Solution:
             prev = slow
             slow = slow.next
             fast = fast.next.next
-        reverse = self.reverseList(slow)
+        mid = self.reverseList(prev.next)
         prev.next = None
-        first, second, mid = head, reverse, None
-        while first and second:
-            prev = second
-            fn = first.next
-            sn = second.next
-            first.next = second
-            second.next = fn
-            second = sn
-            first = fn
-        prev.next = second
-        
-        return head
+        n1, n2 = head, mid
+        while n1 and n2:
+            curr = n1
+            temp1 = n1.next
+            temp2 = n2.next
+            n1.next = n2
+            n2.next = temp1
+            n2 = temp2
+            n1 = temp1
+        if n2:
+            curr.next.next = n2
+        # print("n1 is " + str(n1))
+        # print("n2 is " + str(n2))
+        # print("temp1 is " + str(temp1))
+        # print("temp2 is " + str(temp2))
+        # print("curr is " + str(curr))
+        # print("head is " + str(head))
 
-        
-        
-    
-    def reverseList(self, node):
-        curr, prev = node, None
+
+
+    def reverseList(self, head):
+        curr, prev = head, None
         while curr:
-            temp = curr.next
+            nxt = curr.next
             curr.next = prev
             prev = curr
-            curr = temp
+            curr = nxt
         return prev
-        

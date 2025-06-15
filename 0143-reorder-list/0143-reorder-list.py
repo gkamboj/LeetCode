@@ -19,12 +19,10 @@ class Solution:
         n1, n2 = head, self.reverseList(slow)
         while n1 and n2:
             curr = n2
-            temp1 = n1.next
-            temp2 = n2.next
+            temp1, temp2 = n1.next, n2.next
             n1.next = n2
             n2.next = temp1
-            n2 = temp2
-            n1 = temp1
+            n1, n2 = temp1, temp2
         curr.next = n2
 
 

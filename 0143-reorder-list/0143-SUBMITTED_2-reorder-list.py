@@ -30,3 +30,7 @@ class Solution:
             prev = curr
             curr = nxt
         return prev
+
+# Approach: Similar to the SUBMITTED approach, with this one keeping the middle node in the first half while
+# splitting, while the other keeps the mid node in the second half. As a result, this does not require
+# explicit handling of edge case of single node input.

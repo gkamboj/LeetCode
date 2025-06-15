@@ -4,10 +4,9 @@ class Solution:
         ans, profit = 0, 0
         while end < len(prices):
             if prices[end] >= prices[start]:
-                profit = prices[end] - prices[start]
-                end += 1
-                ans = max(profit, ans)
+                ans = max(prices[end] - prices[start], ans)
             else:
-                start += 1
+                start = end
+            end += 1
         return ans
             

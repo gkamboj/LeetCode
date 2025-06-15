@@ -33,3 +33,8 @@ class Solution:
     
         return matches == 26
 
+
+# Approach: Similar to other submitted approach (https://github.com/gkamboj/LeetCode/blob/main/0567-permutation-in-string/0567-SUBMITTED_UNOPTIMISED-permutation-in-string.py),
+# with optimisation being the reduction of time for equality check of array as it has been replaced with
+# with the number of matches between both the arrays. Whenever total matches are 26 for a window, that's
+# the window we require.

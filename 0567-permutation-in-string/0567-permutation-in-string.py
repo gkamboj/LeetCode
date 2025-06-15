@@ -2,17 +2,15 @@ class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         if len(s1) > len(s2):
             return False
-        counter, counter2 = defaultdict(int), defaultdict(int)
-        for ind, char in enumerate(s1):
-            counter[char] += 1
-            counter2[s2[ind]] += 1
-        for ind in range(len(s1), len(s2)):
-            if self.areSameDict(counter, counter2):
+        n = len(s1)
+        arr1, arr2 = [0 for i in range(26)], [0 for i in range(26)]
+        for ind in range(n):
+            arr1[ord(s1[ind]) - ord('a')] += 1
+            arr2[ord(s2[ind]) - ord('a')] += 1
+        for i in range(n, len(s2)):
+            if arr1 == arr2:
                 return True
-            to_remove_key = s2[ind - len(s1)]
-            counter2[to_remove_key] -= 1
-            counter2[s2[ind]] += 1
-        return self.areSameDict(counter, counter2)
-    
-    def areSameDict(self, dict1, dict2):
-        return {k: v for k, v in dict1.items() if v > 0} == {k: v for k, v in dict2.items() if v > 0}
+            arr2[ord(s2[i]) - ord('a')] += 1
+            arr2[ord(s2[i-n]) - ord('a')] -= 1
+        return arr1 == arr2
+

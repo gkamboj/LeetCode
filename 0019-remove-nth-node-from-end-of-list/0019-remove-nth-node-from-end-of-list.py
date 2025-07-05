@@ -8,16 +8,14 @@ class Solution:
         if not head.next:
             return None
         rev_head = self.reverse(head)
-        count = 1
-        prev, curr = None, rev_head
+        if n == 1:
+            return self.reverse(rev_head.next)
+        prev, curr, count = None, rev_head, 1
         while count < n:
             prev = curr
             curr = curr.next
             count += 1
-        if prev:
-            prev.next = curr.next
-        else:
-            rev_head = rev_head.next
+        prev.next = curr.next
         return self.reverse(rev_head)
         
     def reverse(self, head):

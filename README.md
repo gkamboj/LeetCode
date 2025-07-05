@@ -22,6 +22,7 @@ Collection of LeetCode questions
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/gkamboj/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0217-contains-duplicate](https://github.com/gkamboj/LeetCode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0739-daily-temperatures](https://github.com/gkamboj/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
@@ -95,6 +96,7 @@ Collection of LeetCode questions
 | [0141-linked-list-cycle](https://github.com/gkamboj/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/gkamboj/LeetCode/tree/master/0143-reorder-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/gkamboj/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
 ## Stack
 |  |
@@ -146,6 +148,7 @@ Collection of LeetCode questions
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/gkamboj/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/gkamboj/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -185,4 +188,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/gkamboj/LeetCode/tree/master/0002-add-two-numbers) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->

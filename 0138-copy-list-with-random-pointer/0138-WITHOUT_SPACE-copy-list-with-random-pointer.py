@@ -27,3 +27,7 @@ class Solution:
             curr.next = curr.next.next
             curr = curr.next
         return ans
+
+# Approach: Follow every given node with its duplicate node. Then iterate again to update pointers, and another final iteration
+# to fetch the duplicates separately and return as answer
+# Refer Refer https://leetcode.com/problems/copy-list-with-random-pointer/discuss/43491/A-solution-with-constant-space-complexity-O(1)-and-linear-time-complexity-O(N)

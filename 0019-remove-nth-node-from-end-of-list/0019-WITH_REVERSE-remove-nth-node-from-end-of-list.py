@@ -5,26 +5,28 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        if not head.next: return None
-        lnt = 0
-        node = prev_head = self.reverse(head)
-        if n == 1: return self.reverse(node.next)
-        count = 1
-        while count < n-1:
+        if not head.next:
+            return None
+        rev_head = self.reverse(head)
+        if n == 1:
+            return self.reverse(rev_head.next)
+        prev, curr, count = None, rev_head, 1
+        while count < n:
+            prev = curr
+            curr = curr.next
             count += 1
-            node = node.next
-        node.next = node.next.next
-        return self.reverse(prev_head)
+        prev.next = curr.next
+        return self.reverse(rev_head)
         
-    def reverse(self, node):
-        prev = None
-        while node:
-            nxt = node.next
-            node.next = prev
-            prev = node
-            node = nxt
+    def reverse(self, head):
+        prev, curr = None, head
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
         return prev
     
 '''
-Approach: Reverse the list, remove nth node and again reverse. Handle edge cases separately like n = 1
+Approach: Reverse the list, remove the nth node, and then reverse again. Handle edge cases separately like n = 1
 '''

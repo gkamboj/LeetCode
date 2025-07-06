@@ -33,7 +33,7 @@ class Solution:
 
 # B. To find the entry/beginning point of loop, move one pointer from the collision point (found above) to head and keep moving both
 # pointers (from head and collision point) by a single distance They will meet at entry point. This works because:
-#   Refer Beginning_point_of_cycle_in_linked_list.py
+#   Refer Beginning_point_of_cycle_in_linked_list.pdf
 
 # Check https://www.youtube.com/watch?v=-YiQZi3mLq0 & https://stackoverflow.com/a/6110767 for more detail on this approach
 

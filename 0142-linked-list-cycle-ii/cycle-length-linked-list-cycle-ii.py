@@ -33,5 +33,8 @@ class Solution:
         
         return slow
     
-#Approach: Use fast and slow pointers to check for existence of loop (see other submission for explanation). If loop exists, find the size of cycle by looping over the cycle taking collision point as start. Let this size of cycle be c. Now, start with two pointers: p1 at head and p2 at c distance from head. Keep moving them at same speed of one step at a time, they will meet at starting point of cycle. This is because p2 will cover the extra distance of c (by the time p1 reaches at starting point of cycle) and hence both will meet.
+# Approach: Use fast and slow pointers to check for existence of loop (see other submission for explanation). If loop exists, find the
+# size of cycle by looping over the cycle taking collision point as start. Let this size of cycle be c. Now, start with two pointers:
+# p1 at head and p2 at c distance from head. Keep moving them at same speed of one step at a time, they will meet at starting point of
+# cycle. This is because p2 will cover the extra distance of c (by the time p1 reaches at starting point of cycle) and hence both will meet.
             

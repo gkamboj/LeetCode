@@ -1,14 +1,11 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        mp = {}
-        for num in nums:
-            mp[num] = 1
-        ans = 0
-        for num in mp:
-            if num - 1 not in mp:
-                count = 1
-                while num + 1 in mp:
-                    count += 1
+        nset, ans = set(nums), 0
+        for num in nset:
+            if (num - 1) not in nset:
+                curr = 1
+                while (num + 1) in nset:
                     num += 1
-                ans = max(ans, count)
+                    curr += 1
+                ans = max(ans, curr)
         return ans

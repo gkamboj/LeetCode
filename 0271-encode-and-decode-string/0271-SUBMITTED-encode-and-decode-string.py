@@ -34,6 +34,8 @@ obj = Solution()
 # Approach: We are adding the length of the word as well as "#" while encoding to
 # handle cases when the length of the word is in double digits.
 
-# Note: Using a for loop instead of a while loop at line-17 will not work since the for
+# Note: Using a for loop instead of a while loop at line 17 will not work since the for
 # loop index is always reset after every iteration, even if changed inside the loop.
+
+# URL: https://neetcode.io/problems/string-encode-and-decode
 

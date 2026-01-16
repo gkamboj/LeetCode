@@ -31,21 +31,9 @@ obj = Solution()
 # decoded_list = obj.decode(encoded_str)
 # print(decoded_list == words)
 
-# Approach: We are adding length of word as well as "#" while encoding to
-# handle cases when length of word is in double digits.
+# Approach: We are adding the length of the word as well as "#" while encoding to
+# handle cases when the length of the word is in double digits.
 
-def isValid(s: str) -> bool:
-    chars = {
-        '(': ')',
-        '{': '}',
-        '[': ']'
-    }
-    stack = []
-    for b in s:
-        if b in chars:
-            stack.append(b)
-        elif not stack or chars[stack.pop()] != b:
-            return False
-    return not stack
+# Note: Using a for loop instead of a while loop at line-17 will not work since the for
+# loop index is always reset after every iteration, even if changed inside the loop.
 
-isValid("()[]{}")

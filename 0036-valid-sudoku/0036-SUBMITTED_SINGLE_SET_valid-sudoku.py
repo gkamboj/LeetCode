@@ -4,13 +4,13 @@ class Solution:
         for row_ind in range(9):
             for col_ind in range(9):
                 val = board[row_ind][col_ind]
-                if val != ".":
-                    row_formatted_val, col_formatted_val, subsq_formatted_val = 'r' + str(row_ind) + val, 'c' + str(col_ind) + val, 's' + str(row_ind//3) + str(col_ind//3) + val
-                    if row_formatted_val in seen or col_formatted_val in seen or subsq_formatted_val in seen:
-                        print("seen - ", seen, "val - ", val)
-                        return False
-                    else:
-                        seen.update([row_formatted_val, col_formatted_val, subsq_formatted_val])
+                if val == ".":
+                    continue
+                row_key, col_key, subsq_key = ('r', row_ind, val), ('c', col_ind, val), ('s', row_ind//3, col_ind//3, val)
+                if row_key in seen or col_key in seen or subsq_key in seen:
+                    return False
+                else:
+                    seen.update([row_key, col_key, subsq_key])
         return True
         
  

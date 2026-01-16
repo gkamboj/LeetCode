@@ -1,16 +1,12 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        s = s.lower()
-        start, end = 0, len(s) - 1
-        while start < end:
-            if not s[start].isalpha() and not s[start].isnumeric():
-                start += 1
-            elif not s[end].isalpha() and not s[end].isnumeric():
-                end -= 1
-            elif s[start] != s[end]:
+        alpha_str = ''
+        for char in s.lower():
+            if ord('a') <= ord(char) <= ord('z') or ord('0') <= ord(char) <= ord('9'):
+                alpha_str += char
+        
+        for ind in range(len(alpha_str) - 1//2):
+            if alpha_str[ind] != alpha_str[-1*ind -1]:
                 return False
-            else:
-                start += 1
-                end -= 1
+
         return True
-    

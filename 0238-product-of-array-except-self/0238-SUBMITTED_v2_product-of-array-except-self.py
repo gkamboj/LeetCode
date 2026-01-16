@@ -10,3 +10,5 @@ class Solution:
             prev *= nums[ind]
         result.append(prev)
         return result
+
+# Approach: Similar to the SUBMITTED approach, but using `prev` instead of manual array handling for corner indices

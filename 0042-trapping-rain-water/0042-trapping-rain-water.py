@@ -1,14 +1,15 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        ans, left, right = 0, 0, len(height) - 1
-        l_max, r_max = height[left], height[right]
+        left, right = 0, len(height) - 1
+        ans, left_max, right_max = 0, height[left], height[right]
         while left < right:
-            if l_max > r_max:
-                right -= 1
-                r_max = max(r_max, height[right])
-                ans += (r_max - height[right])
-            else:
+            if height[left] <= height[right]:
+                area = max(0, left_max - height[left])
                 left += 1
-                l_max = max(l_max, height[left])
-                ans += (l_max - height[left])
+                left_max = max(left_max, height[left])
+            else:
+                area = max(0, right_max - height[right])
+                right -= 1
+                right_max = max(right_max, height[right])
+            ans += area
         return ans

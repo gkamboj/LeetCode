@@ -1,17 +1,16 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        ans, start, counter = 0, 0, defaultdict(int)
+        ans, curr, start = 0, {}, 0
         for ind, char in enumerate(s):
-            if counter.get(char, -1) >= start:
-                # Characters before start index are irrelevant, so update start only if repeated char
+            if curr.get(char, -1) >= start:
+                # Characters before the start index are irrelevant, so update start only if repeated char
                 # is after index start
-                start = counter[char] + 1
-            else:
-                ans = max(ans, ind - start + 1)
-            counter[char] = ind
+                start = curr[char] + 1
+            ans = max(ans, ind - start + 1)
+            curr[char] = ind
         return ans
     
 '''
-Approach: Use sliding window with start pointer and current pointer. Use dictionary to store last index 
-occurence of character. Whenever a character is repeated, update the start pointer.
+Approach: Use a sliding window with a start pointer and a current pointer. Use a dictionary to store the last index 
+occurrence of a character. Whenever a character is repeated, update the start pointer.
 '''

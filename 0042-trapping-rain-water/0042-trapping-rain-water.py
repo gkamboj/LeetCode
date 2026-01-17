@@ -4,12 +4,11 @@ class Solution:
         ans, left_max, right_max = 0, height[left], height[right]
         while left < right:
             if height[left] <= height[right]:
-                area = max(0, left_max - height[left])
                 left += 1
                 left_max = max(left_max, height[left])
+                ans += left_max - height[left]
             else:
-                area = max(0, right_max - height[right])
                 right -= 1
                 right_max = max(right_max, height[right])
-            ans += area
+                ans += right_max - height[right]
         return ans

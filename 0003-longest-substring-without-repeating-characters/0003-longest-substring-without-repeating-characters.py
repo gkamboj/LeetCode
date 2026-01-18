@@ -1,8 +1,8 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        ans, curr, start = 0, {}, 0
+        start, ans, curr = 0, 0, {}
         for ind, char in enumerate(s):
-            if curr.get(char, -1) >= start:
+            if char in curr and start <= curr[char]:
                 start = curr[char] + 1
             ans = max(ans, ind - start + 1)
             curr[char] = ind

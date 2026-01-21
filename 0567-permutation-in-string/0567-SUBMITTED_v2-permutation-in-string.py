@@ -25,3 +25,6 @@ class Solution:
         freqDict[s[ind]] -= 1
         if freqDict[s[ind]] == 0:
             del freqDict[s[ind]]
+
+# Approach: Similar to the SUBMITTED approach, but using a dictionary instead of an array and checking
+# for dictionary length to match if strings are palindrome.

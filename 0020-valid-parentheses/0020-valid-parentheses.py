@@ -4,8 +4,6 @@ class Solution:
         for char in s:
             if char in brackets:
                 stack.append(char)
-            elif stack and brackets[stack[-1]] == char:
-                stack.pop()
-            else:
+            elif not stack or brackets[stack.pop()] != char:
                 return False
-        return len(stack) == 0
+        return not stack

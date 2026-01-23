@@ -18,4 +18,6 @@ class Solution:
             else:
                 result.append(int(token))
         return result[-1]
-        
+
+# Approach: Keep pushing non-operator tokens to the stack, and pop the top two whenever a token is an operator.
+# Remember to handle division of negatives as it has to be truncated towards zero.

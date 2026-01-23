@@ -14,6 +14,7 @@ class Solution:
                     case '/':
                         negMultiplier = -1 if scLast * last < 0 else 1
                         val = abs(scLast) // abs(last) * negMultiplier
+                        # This can also be done easily as int(scLast/last)
                 result.append(val)
             else:
                 result.append(int(token))

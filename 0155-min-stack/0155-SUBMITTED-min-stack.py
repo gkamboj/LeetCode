@@ -10,7 +10,7 @@ class MinStack:
             self.stack.append(Node(val, min(val, self.stack[-1].min_val)))
 
     def pop(self) -> None:
-        return self.stack.pop().val
+        self.stack.pop()
 
     def top(self) -> int:
         return self.stack[-1].val
@@ -33,4 +33,4 @@ class Node:
 # param_3 = obj.top()
 # param_4 = obj.getMin()
 
-# Approach: Make stack of custom Node objects instead of values to maintain minimum value till every value.
+# Approach: Make a stack of custom Node objects instead of values to maintain the minimum value till current node.

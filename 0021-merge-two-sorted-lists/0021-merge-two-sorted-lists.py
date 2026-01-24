@@ -5,17 +5,14 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        curr = ans_prev = ListNode()
-        curr.next = list1
+        curr = temp = ListNode()
         while list1 and list2:
             if list1.val <= list2.val:
+                curr.next = list1
                 list1 = list1.next
             else:
-                nxt = curr.next
                 curr.next = list2
-                temp = list2.next
-                list2.next = nxt
-                list2 = temp
+                list2 = list2.next
             curr = curr.next
         curr.next = list1 or list2
-        return ans_prev.next
+        return temp.next

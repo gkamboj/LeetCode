@@ -36,3 +36,6 @@ class Solution:
             curr = temp
         return prev
         
+# Approach: Similar to the SUBMITTED-2 approach, with this one keeping the middle node in the second half while
+# splitting, while the other approach keeps the mid node in the first half. As a result, this requires explicit
+# handling of the edge case of odd nodes count input. SO, PREFER 2ND APPROACH

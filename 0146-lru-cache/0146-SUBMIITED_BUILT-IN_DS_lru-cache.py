@@ -19,13 +19,6 @@ class LRUCache:
         self.cache[key] = value
         if len(self.cache) > self.capacity:
             self.cache.popitem(last=False)
-        
-
-class ListNode:
-
-    def __init__(self, value=0):
-        self.value = value
-        self.next = None
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)

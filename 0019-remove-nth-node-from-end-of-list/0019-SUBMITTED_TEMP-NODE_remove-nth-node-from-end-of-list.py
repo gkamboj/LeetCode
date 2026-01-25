@@ -17,4 +17,6 @@ class Solution:
             curr = curr.next
         back.next = back.next.next
         return temp.next
-        
+
+# Approach: Use a temp node to point to the head. Find the nth node, then traverse two pointers from temp and
+# nth node till curr becomes None. Use temp pointer node's next to skip its next node and return temp's next at end.

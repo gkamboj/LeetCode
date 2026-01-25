@@ -23,8 +23,6 @@ class Solution:
             n2.next = n1nxt
             n1 = n1nxt
             n2 = n2nxt
-
-        return head
     
     def reverseList(self, head):
         prev, curr = None, head

@@ -1,19 +1,29 @@
+import math
+
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        start, end, ans = 1, max(piles), max(piles)
-        while start <= end:
-            mid = start + (end - start) // 2
-            hours = self.findEatingHours(piles, mid)
+        low = 1 # minimum speed
+        high = ans = max(piles)
+        while low <= high:
+            mid = low + (high - low) // 2
+            hours = self.eatingHours(piles, mid)
             if hours > h:
-                start = mid + 1
+                low = mid + 1
             else:
-                end = mid - 1
+                high = mid - 1
                 ans = min(ans, mid)
         return ans
     
     
-    def findEatingHours(self, piles, speed):
+    def eatingHours(self, piles, speed):
         val = 0
         for pile in piles:
             val += -(pile // -speed)
         return val
+
+    def eatingHoursV2(self, piles, speed):
+        hours = 0
+        for count in piles:
+            hours += math.ceil(count / speed)
+        return hours
+

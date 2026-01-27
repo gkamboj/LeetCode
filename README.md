@@ -29,6 +29,7 @@ Collection of LeetCode questions
 | [0739-daily-temperatures](https://github.com/gkamboj/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
 | [0853-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0853-car-fleet) |
+| [0875-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 ## Hash Table
@@ -159,6 +160,7 @@ Collection of LeetCode questions
 | [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0704-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0704-binary-search) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
 ## Greedy

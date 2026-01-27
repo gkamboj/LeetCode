@@ -47,6 +47,8 @@ class Node:
         self.key, self.value = key, value
         self.prev = self.next = None
 
+# Approach: Using a custom doubly linked list. Move the node with the passed key to the end for every get call. Similar for put too
+# for existing key and insertion at the end for new keys.
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)

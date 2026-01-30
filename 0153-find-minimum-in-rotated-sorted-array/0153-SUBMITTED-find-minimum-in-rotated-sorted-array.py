@@ -15,4 +15,4 @@ class Solution:
 # Approach: Binary search. Note that `nums[start]` is returned at the end to handle cases when `mid`
 # becomes the same as `start` due to integer division.
 
-# Check Neetcode for a solution with an alternative terminating condition.
+# Check Neetcode for smaller solution and explanations

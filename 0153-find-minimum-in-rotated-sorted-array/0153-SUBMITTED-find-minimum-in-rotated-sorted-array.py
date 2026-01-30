@@ -1,19 +1,18 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        if len(nums) == 1 or nums[0] < nums[-1]:
-            return nums[0]
         start, end = 0, len(nums) - 1
         while start < end:
             mid = start + (end - start) // 2
-            if nums[mid] > nums[mid + 1]:
-                return nums[mid + 1]
-            elif nums[mid] < nums[mid - 1]:
+            print("start: ", start, ", mid ", mid, ", end ", end)
+            if nums[mid - 1] > nums[mid] < nums[mid + 1]:
                 return nums[mid]
-            elif nums[mid] >= nums[start]:
+            elif nums[mid] > nums[end]:
                 start = mid + 1
             else:
                 end = mid - 1
+        return nums[start]
 
-# Approach: Binary search with terminating conditions on nums[mid].
+# Approach: Binary search. Note that `nums[start]` is returned at the end to handle cases when `mid`
+# becomes the same as `start` due to integer division.
 
-# Check Neetcode for solution with alternative terminating condition.
+# Check Neetcode for a solution with an alternative terminating condition.

@@ -3,7 +3,7 @@ class Solution:
         start, end = 0, len(nums) - 1
         while start <= end:
             mid = start + (end - start) // 2
-            mid_val = self.get_mid_val(nums[0], nums[mid], target)
+            mid_val = self.get_mid_val(nums[start], nums[mid], target)
             if mid_val == target:
                 return mid
             elif mid_val > target:

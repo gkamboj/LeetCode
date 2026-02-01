@@ -1,29 +1,31 @@
 class TimeMap:
 
     def __init__(self):
-        self.mp = defaultdict(list)
+        self.storage = defaultdict(list)
 
     def set(self, key: str, value: str, timestamp: int) -> None:
-        self.mp[key].append([value, timestamp])
+        self.storage[key].append((value, timestamp))
 
     def get(self, key: str, timestamp: int) -> str:
-        values = self.mp[key]
-        if not values or values[0][1] > timestamp:
-            return ""
-        ans = values[0]
+        values = self.storage[key]
         start, end = 0, len(values) - 1
+        ans_ind, ans = -1, ''
         while start <= end:
             mid = start + (end - start) // 2
-            mid_ts = values[mid][1]
-            if mid_ts == timestamp:
+            val, ts = values[mid][0], values[mid][1]
+            if ts == timestamp:
                 return values[mid][0]
-            elif mid_ts < timestamp:
-                if mid_ts > ans[1]:
-                    ans = values[mid]
+            elif ts < timestamp:
+                if mid > ans_ind:
+                    ans_ind = mid
+                    ans = values[ans_ind][0]
                 start = mid + 1
             else:
                 end = mid - 1
-        return ans[0]
+        return ans
+
+
+        return ''
 
 
 # Your TimeMap object will be instantiated and called as such:

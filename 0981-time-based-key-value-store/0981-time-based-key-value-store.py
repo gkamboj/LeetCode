@@ -9,16 +9,14 @@ class TimeMap:
     def get(self, key: str, timestamp: int) -> str:
         values = self.storage[key]
         start, end = 0, len(values) - 1
-        ans_ind, ans = -1, ''
+        ans = ''
         while start <= end:
             mid = start + (end - start) // 2
             val, ts = values[mid][0], values[mid][1]
             if ts == timestamp:
                 return values[mid][0]
             elif ts < timestamp:
-                if mid > ans_ind:
-                    ans_ind = mid
-                    ans = values[ans_ind][0]
+                ans = values[mid][0]
                 start = mid + 1
             else:
                 end = mid - 1

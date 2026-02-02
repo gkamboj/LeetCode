@@ -19,6 +19,7 @@ Collection of LeetCode questions
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0136-single-number](https://github.com/gkamboj/LeetCode/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/gkamboj/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/gkamboj/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/gkamboj/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -211,6 +212,7 @@ Collection of LeetCode questions
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/gkamboj/LeetCode/tree/master/0136-single-number) |
 | [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Union-Find
 |  |

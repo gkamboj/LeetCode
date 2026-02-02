@@ -6,5 +6,3 @@ class Solution:
         return ans
             
 # Approach: Get ith bit and set it to (31 - i)th bit of answer. 
-# Getting the ith bit: b = (n >> i) & 1.
-# Setting this bit to (31 - i)th bit of answer: ans != b << (31 - i)

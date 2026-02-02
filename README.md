@@ -132,6 +132,7 @@ Collection of LeetCode questions
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/gkamboj/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
+| [0191-number-of-1-bits](https://github.com/gkamboj/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
@@ -213,6 +214,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0136-single-number](https://github.com/gkamboj/LeetCode/tree/master/0136-single-number) |
+| [0191-number-of-1-bits](https://github.com/gkamboj/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Union-Find
 |  |

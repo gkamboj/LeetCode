@@ -3,20 +3,20 @@ class Solution:
         start, end = 0, len(nums) - 1
         while start <= end:
             mid = start + (end - start) // 2
-            mid_val = self.get_mid_val(nums[start], nums[mid], target)
-            if mid_val == target:
+            if nums[mid] == target:
                 return mid
-            elif mid_val > target:
-                end = mid - 1
+            elif nums[start] == target:
+                return start
+            elif nums[end] == target:
+                return end
+            elif nums[start] < nums[mid]:
+                if nums[start] <= target < nums[mid]:
+                    end = mid - 1
+                else:
+                    start = mid + 1
             else:
-                start = mid + 1
+                if nums[mid] < target <= nums[end]:
+                    start = mid + 1
+                else:
+                    end = mid - 1
         return -1
-    
-    
-    def get_mid_val(self, start_val, mid_val, target):
-        ans = mid_val
-        if mid_val >= start_val and target < start_val:
-            ans = -10**4 - 1
-        elif mid_val < start_val and target >= start_val:
-            ans = 10**4 + 1
-        return ans

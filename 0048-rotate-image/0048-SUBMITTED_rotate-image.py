@@ -34,7 +34,7 @@ class Solution:
             return value - 1001
 
 # Approach: Find top, right, bottom, and left. Rotate these four by 90 degrees. Repeat the same for every cell.
-# Avoid the repitition by storing the value as: val + 1001 for positives (as maximum allowed is 1000) and val - 1000 for negatives.
-# Reset the value by adjusting 1001 factor at end.
+# Avoid the repetition by storing the value as: val + 1001 for positives (as the maximum allowed is 1000) and val - 1000 for negatives.
+# Reset the value by adjusting the 1001 factor at the end.
 
-# Check NeetCode solution for similar approach without needing values adjustment plus another approach using transpose.
+# Check NeetCode solution for a similar approach without needing value adjustment, plus another approach using transpose.

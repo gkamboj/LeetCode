@@ -30,3 +30,7 @@ class Solution:
         print("start: ", start, " spiral: ", spiral)
         return spiral
         
+# Approach: Start from the outermost rectangle and cover the inner rectangles one by one. Handle edge cases like a single column 
+# to avoid duplication.
+
+# Check both iterative solutions of NC for shorter approaches.

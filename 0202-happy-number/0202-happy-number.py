@@ -1,15 +1,14 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        vals = []
-        while True:
-            temp = 0
-            while n:
-                temp += (n % 10) ** 2
-                n = n // 10
-            if temp in vals:
+        nums = set()
+        while n != 1:
+            curr = 0
+            while n > 0 :
+                curr += (n % 10) ** 2
+                n //= 10
+            if curr in nums:
                 return False
-            elif temp == 1:
-                return True
-            else:
-                n = temp
-                vals.append(temp)
+            nums.add(curr)
+            n = curr
+
+        return True

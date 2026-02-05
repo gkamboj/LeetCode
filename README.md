@@ -18,6 +18,7 @@ Collection of LeetCode questions
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
+| [0066-plus-one](https://github.com/gkamboj/LeetCode/tree/master/0066-plus-one) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
@@ -222,6 +223,7 @@ Collection of LeetCode questions
 | ------- |
 | [0002-add-two-numbers](https://github.com/gkamboj/LeetCode/tree/master/0002-add-two-numbers) |
 | [0048-rotate-image](https://github.com/gkamboj/LeetCode/tree/master/0048-rotate-image) |
+| [0066-plus-one](https://github.com/gkamboj/LeetCode/tree/master/0066-plus-one) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/gkamboj/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/gkamboj/LeetCode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/gkamboj/LeetCode/tree/master/0268-missing-number) |

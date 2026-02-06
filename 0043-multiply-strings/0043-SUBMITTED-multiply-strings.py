@@ -14,3 +14,5 @@ class Solution:
             n1 *= 2
         
         return str(ans)
+
+# Approach: Keep doubling the higher number and halving the smaller number. Add higher number to `ans` whenever smnaller becomes odd.

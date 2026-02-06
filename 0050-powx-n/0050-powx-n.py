@@ -14,3 +14,6 @@ class Solution:
             power >>= 1
         
         return ans if n > 0 else 1/ans
+
+# Approach: Keep squaring x and halving n. Multiple ans with x whenever n becomes odd. Handle negative cases before returning.
+# Refer NC iterative solution for more details.

@@ -15,4 +15,6 @@ class Solution:
         
         return str(ans)
 
-# Approach: Keep doubling the higher number and halving the smaller number. Add higher number to `ans` whenever smnaller becomes odd.
+# Approach: Keep doubling the higher number and halving the smaller number. Add the higher number to `ans` whenever the smaller number becomes odd.
+
+# NOTE: This approach is NOT ALLOWED AS INPUT CANNOT BE CONVERTED TO INTEGER DIRECTLY as per the given constraints. It's done just for conceptual understanding.

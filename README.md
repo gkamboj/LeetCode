@@ -77,6 +77,7 @@ Collection of LeetCode questions
 | [0006-zigzag-conversion](https://github.com/gkamboj/LeetCode/tree/master/0006-zigzag-conversion) |
 | [0020-valid-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0022-generate-parentheses) |
+| [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
@@ -223,6 +224,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/gkamboj/LeetCode/tree/master/0002-add-two-numbers) |
+| [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/gkamboj/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/gkamboj/LeetCode/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/gkamboj/LeetCode/tree/master/0066-plus-one) |
@@ -251,5 +253,6 @@ Collection of LeetCode questions
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->

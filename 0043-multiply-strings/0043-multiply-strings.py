@@ -12,10 +12,12 @@ class Solution:
                 carry = val // 10
             ans[i] = str(int(ans[i]) + carry)
             carry = 0
-            print(ans)
         ans[0] = str(int(ans[0]) + carry)
 
         return str(int("".join(ans)))
+
+# Approach: Programming way of how we do multiplication on paper. See below examples to understand
+# how nested loop in code works.
 
 #     1 2 3
 #     4 5 6

@@ -38,6 +38,7 @@ Collection of LeetCode questions
 | [0875-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Hash Table
 |  |
 | ------- |
@@ -59,6 +60,7 @@ Collection of LeetCode questions
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Sorting
 |  |
 | ------- |
@@ -157,6 +159,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Quickselect
 |  |
 | ------- |
@@ -216,6 +219,7 @@ Collection of LeetCode questions
 | [0155-min-stack](https://github.com/gkamboj/LeetCode/tree/master/0155-min-stack) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Backtracking
 |  |
 | ------- |
@@ -255,4 +259,8 @@ Collection of LeetCode questions
 | ------- |
 | [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
+## Data Stream
+|  |
+| ------- |
+| [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 <!---LeetCode Topics End-->

@@ -12,7 +12,6 @@ class DetectSquares:
         self.ypoints[point[1]].add(point[0])
 
     def count(self, point: List[int]) -> int:
-        # print("points: ", self.points, " ,\nxpoints: ", self.xpoints, " ,\nypoints: ", self.ypoints, "\n\n")
         ans, in_x, in_y = 0, point[0], point[1]
         for y in self.xpoints[in_x]:
             for x in self.ypoints[in_y]:
@@ -24,3 +23,9 @@ class DetectSquares:
 # obj = DetectSquares()
 # obj.add(point)
 # param_2 = obj.count(point)
+
+# Approach: Maintain a dict to count number of occurences of points and dicts to store y coordinates
+# corresponding to an x as well as x coordinates corresponding to a y. Check all combinations from
+# the last 2 dicts and add to answer.
+# NOTE: Add to answer only if it's square (that is ignore rectangles) and input points is different
+# from current point (to ignore zero area squares).

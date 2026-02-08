@@ -12,7 +12,8 @@ class DetectSquares:
         self.ypoints[point[1]].add(point[0])
 
     def count(self, point: List[int]) -> int:
-        ans, in_x, in_y = 0, point[0], point[1]
+        ans = 0
+        in_x, in_y = point
         for y in self.xpoints[in_x]:
             for x in self.ypoints[in_y]:
                 if x != in_x and y != in_y and abs(x - in_x) == abs(y - in_y):

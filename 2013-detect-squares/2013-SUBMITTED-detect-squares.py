@@ -27,11 +27,11 @@ class DetectSquares:
 # obj.add(point)
 # param_2 = obj.count(point)
 
-# Approach: Maintain a dict to count number of occurences of points and another dict to store y coordinates
-# corresponding to an x. Check all combinations from the last 2 dicts and add to answer. Consider both sides
-# of point as square can be on left as well as right side of input point.
-# Similar approach can be done by considering y axis as base instead of x-axis. Then we would have considered
-# squares above and below of input point.
-# NOTE: Add to answer only input points is different from current point (to ignore zero area squares).
+# Approach: Maintain a dict to count the number of occurrences of points and another dict to store y coordinates
+# corresponding to an x. Check all combinations from the last 2 dicts and add to the answer. Consider both sides
+# of points as squares can be on the left as well as the right side of the input point.
+# A similar approach can be done by considering y-axis as the base instead of the x-axis. Then we would have considered
+# squares above and below the input point.
+# NOTE: Add to answer only input points is different fromthe  current point (to ignore zero area squares).
 
-# Refer NC HashMap - II solution for better understanding.
+# Refer to NC HashMap - II solution for better understanding.

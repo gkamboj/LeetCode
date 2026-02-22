@@ -9,3 +9,6 @@ class Solution:
             else:
                 ans[-1][1] = max(ans[-1][1], val[1])
         return ans
+
+# Approach: Sort the input by first value and add first list entry to the ans. Keep on iterating
+# remaining input members and update ans whenever new non-overlapping member is encountered.

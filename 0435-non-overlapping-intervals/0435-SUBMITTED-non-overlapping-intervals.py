@@ -11,5 +11,5 @@ class Solution:
                 curr_end = min(curr_end, end)
         return ans
 
-# Approach: Sort the intervals wrt their start. For every overlap, remove the interval with higher end value (so as to avoid maximum overlapping) and increment answer.
-# In case of no overlap, update curr_end variable to current end.
+# Approach: Sort the intervals wrt their start. For every overlap, remove the interval with the higher end value (so as to avoid maximum overlapping) and increment the ans.
+# In case of no overlap, update the curr_end variable to the current end.

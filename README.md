@@ -34,6 +34,7 @@ Collection of LeetCode questions
 | [0268-missing-number](https://github.com/gkamboj/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/gkamboj/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0704-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/gkamboj/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
@@ -75,6 +76,7 @@ Collection of LeetCode questions
 | [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/gkamboj/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0853-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0853-car-fleet) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 ## String
@@ -197,6 +199,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/gkamboj/LeetCode/tree/master/0011-container-with-most-water) |
+| [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -205,6 +208,7 @@ Collection of LeetCode questions
 | [0053-maximum-subarray](https://github.com/gkamboj/LeetCode/tree/master/0053-maximum-subarray) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0338-counting-bits](https://github.com/gkamboj/LeetCode/tree/master/0338-counting-bits) |
+| [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 ## Monotonic Stack
 |  |
 | ------- |

@@ -42,6 +42,7 @@ Collection of LeetCode questions
 | [0875-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
 | [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Hash Table
@@ -80,6 +81,7 @@ Collection of LeetCode questions
 | [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0853-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0853-car-fleet) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## String
 |  |
 | ------- |
@@ -155,11 +157,13 @@ Collection of LeetCode questions
 | [0190-reverse-bits](https://github.com/gkamboj/LeetCode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/gkamboj/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
 ## Bucket Sort
 |  |
@@ -174,6 +178,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Matrix
 |  |
 | ------- |
@@ -251,6 +256,7 @@ Collection of LeetCode questions
 | [0202-happy-number](https://github.com/gkamboj/LeetCode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/gkamboj/LeetCode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/gkamboj/LeetCode/tree/master/0371-sum-of-two-integers) |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -291,4 +297,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->

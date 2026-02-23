@@ -18,3 +18,6 @@ class KthLargest:
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)
 # param_1 = obj.add(val)
+
+# Approach: To track kth largest, create a min heap of size k so that root always give kth larges.
+# Keep updating heap on every addition.

@@ -20,3 +20,9 @@ class Solution:
             freq[left] -= 1
             right = max(right - left, left)
         return right
+
+# Approach: Bucket sort, which uses the given information that the maximum weight of stones is a small constant (30),
+# so we can create an array to store the frequency for every weight. We can then start from the right end and keep canceling
+# weights as we move towards the left.
+# Note that, at any moment, `right` represents the largest weight and we need to consider it only if the frequency is odd, as even
+# frequency will cancel itself.

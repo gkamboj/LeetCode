@@ -11,3 +11,5 @@ class Solution:
                 h.heappush(heap, [-(point[0] ** 2 + point[1] ** 2), point])
         return [point[1] for point in heap]    
             
+# Approach: Max-heap approach - Create max heap of size k and pop only if new point's distance
+# is less than current max distance of heap.

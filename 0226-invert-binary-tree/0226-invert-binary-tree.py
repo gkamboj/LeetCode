@@ -6,9 +6,9 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        queue = [root]
+        queue = deque([root])
         while queue and queue[0]:
-            curr = queue.pop()
+            curr = queue.popleft()
             if curr.left:
                 queue.append(curr.left)
             if curr.right:

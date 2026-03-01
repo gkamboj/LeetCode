@@ -1,4 +1,5 @@
 from PyDSCodes.ds.trees.implementations.TreeNode import TreeNode
+from collections import deque
 
 
 # root - left - right
@@ -65,9 +66,9 @@ def in_order(root_node):
 
 
 def level_order(root_node):
-    queue, ans = [root_node], []
+    queue, ans = deque([root_node]), []
     while queue:
-        node = queue.pop(0)
+        node = queue.popleft()
         ans.append(node.val)
         if node.left:
             queue.append(node.left)
@@ -114,7 +115,7 @@ def zig_zag_traversal_v2(root_node):
 
 '''
 Tree with below level order traversal (with null nodes) is input. Check ./resources/example_1.png for visualisation of input tree.
-[1,2,3,4,5,6,7,8,null,null,9,10,null,null,null,null,null,null,null,11,12]
+[1, 2, 3, 4, 5, 6, 7, 8, null, null, 9, 10, null, null, null, null, null, null, null, 11, 12]
 '''
 
 root = TreeNode(1)

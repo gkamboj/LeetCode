@@ -303,6 +303,7 @@ Collection of LeetCode questions
 ## Tree
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Binary Search Tree
 |  |
@@ -311,9 +312,18 @@ Collection of LeetCode questions
 ## Binary Tree
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
 ## Geometry
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->

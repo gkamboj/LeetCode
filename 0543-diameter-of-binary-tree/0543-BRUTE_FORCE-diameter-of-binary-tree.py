@@ -20,4 +20,7 @@ Approach: This is a brute force approach.
 Diameter of a node is (left_height + right_height + 1). 
 Find the diameter of every node and return max of all. This can be done by recursively calling the diameter method for left, right, and
 comparing it with diamater of the current node.
+
+Complexity: For a skewed tree, this will have O(n^2) complexity as complexity for T(n) = T(n - 1) + O(n) [that is, height of root and further time for (n-1)th node]
+Hence, it's not an acceptable solution.
 '''

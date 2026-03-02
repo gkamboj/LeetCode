@@ -8,7 +8,7 @@ class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         if not root:
             return False
-        if self.isSameTree(root, subRoot) or ():
+        if self.isSameTree(root, subRoot):
             return True
         return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
     
@@ -19,8 +19,8 @@ class Solution:
         return node1 is node2
     
 '''
-Approach: Recursive - check if tree with current node as root is same as subRoot tree. If not, recursively check for left as well as right subtree.
+Approach: Recursive - check if the tree with the current node as the root is the same as the subRoot tree. If not, recursively check for the left as well as the right subtree.
 
-NOTE: Terminating condition returning False works because it's given that number of nodes will be at least 1 in both the nodes. If minimum nodes were
+NOTE: Terminating condition returning False works because it's given that the number of nodes will be at least 1 in both nodes. If the minimum nodes were
 0, then case with [],[] would have failed. 
 '''

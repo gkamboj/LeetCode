@@ -14,3 +14,10 @@ class Solution:
         if not node:
             return 0
         return 1 + max(self.height(node.left), self.height(node.right))
+
+'''
+Approach: This is brute force approach.
+Diameter of a node is (left_height + right_height + 1). 
+Find diameter of every node and return max of all. This can be done by recursively calling diamtere method for left, right and
+comparing it with diamater of current node.
+'''

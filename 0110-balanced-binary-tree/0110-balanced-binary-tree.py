@@ -22,3 +22,8 @@ class Solution:
                     return False
                 heights[curr] = max(left_ht, right_ht) + 1
         return True
+
+'''
+Approach: Do post-order traversal and store height for every node. At any point, if diff between left and right height
+for any node is greater than 1, return False.
+'''

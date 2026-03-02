@@ -24,6 +24,6 @@ class Solution:
         return True
 
 '''
-Approach: Do post-order traversal and store height for every node. At any point, if diff between left and right height
+Approach: Do post-order traversal and store the height for every node. At any point, if diff between the left and right height
 for any node is greater than 1, return False.
 '''

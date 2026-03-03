@@ -50,6 +50,21 @@ def post_order_2(root_node):
     return ans[::-1]
 
 
+def post_order_3(root):
+    stack, ans, seen = [root], [], set()
+    while stack:
+        curr = stack[-1]
+        if (left := curr.left) and left not in seen:
+            stack.append(left)
+        elif (right := curr.right) and right not in seen:
+            stack.append(right)
+        else:
+            ans.append(stack.pop().val)
+            seen.add(curr)
+
+    return ans
+
+
 # left - root - right
 def in_order(root_node):
     stack, ans = [], []
@@ -136,6 +151,7 @@ print(f'Inorder traversal: {in_order(root)}')
 print(f'Pre-order traversal: {pre_order(root)}')
 print(f'Post-order traversal: {post_order(root)}')
 print(f'Post-order 2 traversal: {post_order_2(root)}')
+print(f'Post-order 3 traversal: {post_order_3(root)}')
 print(f'Zig-zag traversal: {zig_zag_traversal(root)}')
 print(f'Zig-zag traversal v2: {zig_zag_traversal_v2(root)}')
 

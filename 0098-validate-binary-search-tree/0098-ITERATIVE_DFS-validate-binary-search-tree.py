@@ -6,20 +6,20 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        result, stack, curr = [], [], root
-        while stack or curr:
+        stack, curr, prev = [], root, -2 **31 - 1
+        while curr or stack:
             if curr:
                 stack.append(curr)
                 curr = curr.left
-            else:
-                curr = stack.pop()
-                if result and result[-1] >= curr.val:
+            elif stack:
+                temp = stack.pop()
+                if temp.val <= prev:
                     return False
-                result.append(curr.val)
-                curr = curr.right
+                prev = temp.val
+                curr = temp.right
         return True
                 
 '''
-Approach: Iterative - inorder DFS template. Before adding to result array, check if value is not greater than last value of result, return False. If while
-loop completes successfully, return True.
+Approach: Iterative - inorder DFS template. Maintain previous pointer. During traversal, if the current value is not
+greater than the previous at any time, return False. If the while loop completes successfully, return True.
 '''

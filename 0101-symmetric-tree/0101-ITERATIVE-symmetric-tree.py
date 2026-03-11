@@ -16,3 +16,5 @@ class Solution:
             stack.append((l.left, r.right))
             stack.append((l.right, r.left))
         return True
+
+# Approach: Compare left and right trees using preorder (root-left-right) and root-right-left

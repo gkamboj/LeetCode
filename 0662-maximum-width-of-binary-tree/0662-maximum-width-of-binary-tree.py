@@ -18,3 +18,7 @@ class Solution:
                     temp.append((right, 2 * num + 1))
             queue = deque(temp)
         return ans
+
+# Approach: Do BFS/level order traversal and store node numbering along with the node
+# in queue. After every level, get the level's width from the difference of numbering
+# of first and last node of level.

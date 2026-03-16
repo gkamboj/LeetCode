@@ -1,7 +1,7 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        result, loopEnd = [], ((min(len(matrix), len(matrix[0])) - 1) // 2) + 1
-        for i in range(loopEnd):
+        result = []
+        for ind in range(math.ceil(min(len(matrix), len(matrix[0])) / 2)):
             result += self.outerSpiral(matrix, i)
         return result
 

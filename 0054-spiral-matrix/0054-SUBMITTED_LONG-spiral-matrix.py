@@ -1,7 +1,6 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         result, loopEnd = [], ((min(len(matrix), len(matrix[0])) - 1) // 2) + 1
-        print("loopEnd: ", loopEnd)
         for i in range(loopEnd):
             result += self.outerSpiral(matrix, i)
         return result
@@ -27,7 +26,6 @@ class Solution:
             spiral.append(matrix[row][start])
             row -= 1
         
-        print("start: ", start, " spiral: ", spiral)
         return spiral
         
 # Approach: Start from the outermost rectangle and cover the inner rectangles one by one. Handle edge cases like a single column 

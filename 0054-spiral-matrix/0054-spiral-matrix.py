@@ -10,6 +10,8 @@ class Solution:
         spiral, colEnd, rowEnd = [], len(matrix[0]) - start, len(matrix) - start
         if colEnd - start == 1:
             return [row[start] for row in matrix[start:rowEnd]]
+        elif rowEnd - start == 1:
+            return matrix[start][start:colEnd]
         
         spiral.extend(matrix[start][start:colEnd])
         

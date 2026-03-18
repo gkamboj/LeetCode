@@ -3,9 +3,9 @@ class Solution:
         operators = ['+', '-', '*', '/']
         stack = []
         for token in tokens:
-            if token not in operators:
+            try:
                 stack.append(int(token))
-            else:
+            except:
                 v2, v1 = stack.pop(), stack.pop()
                 match token:
                     case '+':
@@ -18,6 +18,10 @@ class Solution:
                         if v1 * v2 > 0:
                             res = v1 // v2
                         else:
-                            res = math.ceil(v1 / v2)
+                            res = int(v1 / v2)
                 stack.append(res)
         return stack.pop()
+
+'''
+Approach: Similar to other SUBMITTED approach, except that it uses EAFP.
+'''

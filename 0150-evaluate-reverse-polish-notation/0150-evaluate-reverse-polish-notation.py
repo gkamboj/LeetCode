@@ -1,20 +1,23 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        result, operators = [], ['+', '-', '*', '/']
+        operators = ['+', '-', '*', '/']
+        stack = []
         for token in tokens:
-            if token in operators:
-                last, scLast = result.pop(), result.pop()
+            if token not in operators:
+                stack.append(int(token))
+            else:
+                v2, v1 = stack.pop(), stack.pop()
                 match token:
                     case '+':
-                        val = scLast + last
-                    case '-':
-                        val = scLast - last
+                        res = v1 + v2
                     case '*':
-                        val = scLast * last
+                        res = v1 * v2
+                    case '-':
+                        res = v1 - v2
                     case '/':
-                        val = int(scLast/last)
-                result.append(val)
-            else:
-                result.append(int(token))
-        return result[-1]
-        
+                        if v1 * v2 > 0:
+                            res = v1 // v2
+                        else:
+                            res = math.ceil(v1 / v2)
+                stack.append(res)
+        return stack.pop()

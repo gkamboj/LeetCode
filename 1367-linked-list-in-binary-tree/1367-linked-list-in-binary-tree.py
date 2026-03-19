@@ -22,3 +22,10 @@ class Solution:
         if not root or head.val != root.val:
             return False
         return self.helper(head.next, root.left) or self.helper(head.next, root.right)
+
+'''
+Approach: For every node, check the entire path as well as recursively call isSubPath for left as well as right nodes.
+To check the entire path, keep going downward till current node values matches with LL node.
+If the LL node ever becomes None, it means LL is finished and hence, sub path is present.
+'''
+	

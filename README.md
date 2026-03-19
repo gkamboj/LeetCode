@@ -126,6 +126,7 @@ Collection of LeetCode questions
 | [0146-lru-cache](https://github.com/gkamboj/LeetCode/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/gkamboj/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0355-design-twitter](https://github.com/gkamboj/LeetCode/tree/master/0355-design-twitter) |
+| [1367-linked-list-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1367-linked-list-in-binary-tree) |
 ## Two Pointers
 |  |
 | ------- |
@@ -324,6 +325,7 @@ Collection of LeetCode questions
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1367-linked-list-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1367-linked-list-in-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Search Tree
 |  |
@@ -350,6 +352,7 @@ Collection of LeetCode questions
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1367-linked-list-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1367-linked-list-in-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Geometry
 |  |
@@ -370,6 +373,7 @@ Collection of LeetCode questions
 | [0543-diameter-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [1367-linked-list-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1367-linked-list-in-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |

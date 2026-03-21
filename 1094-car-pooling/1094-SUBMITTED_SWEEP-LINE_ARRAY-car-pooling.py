@@ -12,3 +12,9 @@ class Solution:
                 return False
         
         return True
+
+'''
+Approach: Consider every pickup and drop as an event: with pickup time adding the passenger at that point of time,
+and drop time subtracting those passengers. Now, if at any time the number of passengers surpasses capacity, polling
+can't be done. If there's no such time, pooling is possible.
+'''

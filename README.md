@@ -48,6 +48,7 @@ Collection of LeetCode questions
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
+| [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 | [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Hash Table
 |  |
@@ -91,6 +92,7 @@ Collection of LeetCode questions
 | [0853-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0853-car-fleet) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
+| [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 ## String
 |  |
 | ------- |
@@ -110,6 +112,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 ## Union Find
 |  |
 | ------- |
@@ -181,6 +184,7 @@ Collection of LeetCode questions
 | [0703-kth-largest-element-in-a-stream](https://github.com/gkamboj/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
+| [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -302,6 +306,7 @@ Collection of LeetCode questions
 | ------- |
 | [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
+| [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 ## Data Stream
 |  |
 | ------- |

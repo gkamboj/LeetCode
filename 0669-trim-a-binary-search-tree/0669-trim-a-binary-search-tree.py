@@ -26,4 +26,11 @@ class Solution:
         
         return root
         
-        return root
+'''
+Approach: 
+S-1: Find valid root till current root is out of range. This is to be returned at end.
+S-2: Fix left sub tree of the root by going till last level. If, for any iteration,
+a node is out of range, assign node's right child to parent's left as the left child
+and its further child nodes will be out of range.
+S-3: Similar to S-2, fix the right sub tree of root.
+'''

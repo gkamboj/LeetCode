@@ -11,17 +11,19 @@ class Solution:
                 root = root.right
             else:
                 root = root.left
-        if not root:
-            return root
-        stack = [root]
-        while stack:
-            curr = stack.pop()
-            while curr.left and curr.left.val < low:
-                curr.left = curr.left.right
-            while curr.right and curr.right.val > high:
-                curr.right = curr.right.left
-            if curr.left:
-                stack.append(curr.left)
-            if curr.right:
-                stack.append(curr.right)
+        
+        node = root
+        while node:
+            while node.left and node.left.val < low:
+                node.left = node.left.right
+            node = node.left
+
+        node = root
+        while node:
+            while node.right and node.right.val > high:
+                node.right = node.right.left
+            node = node.right
+        
+        return root
+        
         return root

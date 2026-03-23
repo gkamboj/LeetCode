@@ -13,3 +13,8 @@ class Solution:
             ans = max(ans, curr)
         
         return ans
+
+'''
+Approach: Start with a window of size k of the first k elements. Keep shrinking it and adding an element from end.
+Update ans wherever applicable.
+'''

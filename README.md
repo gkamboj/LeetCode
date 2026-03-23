@@ -49,6 +49,7 @@ Collection of LeetCode questions
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 ## Hash Table
 |  |
@@ -113,6 +114,7 @@ Collection of LeetCode questions
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 ## Union Find
 |  |
 | ------- |
@@ -253,6 +255,7 @@ Collection of LeetCode questions
 | [0003-longest-substring-without-repeating-characters](https://github.com/gkamboj/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/gkamboj/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 ## Design
 |  |
 | ------- |

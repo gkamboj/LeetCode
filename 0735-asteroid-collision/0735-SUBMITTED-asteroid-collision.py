@@ -5,7 +5,7 @@ class Solution:
             while stack and ast < 0 < stack[-1]:
                 if stack[-1] < -ast:
                     stack.pop()
-                    continue # if there is collision, we should continue to avoid breaking in this interation
+                    continue # if there is a collision, we should continue to avoid breaking after this iteration.
                 elif stack[-1] == -ast:
                     stack.pop()
                 break

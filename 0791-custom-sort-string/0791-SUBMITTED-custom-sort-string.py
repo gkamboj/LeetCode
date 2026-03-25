@@ -13,5 +13,5 @@ class Solution:
 
 '''
 Approach: Store the order in a dictionary. Then, for every character of s, add it to
-the array according to the input order. Join the array to get the final answer
+the array according to the input order. Join the array to get the final answer.
 '''

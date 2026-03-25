@@ -12,6 +12,6 @@ class Solution:
         return ''.join(chars)
 
 '''
-Approach: Store the order in a dictionary. Then for every char, store characters of s
-in array according the input order. Join the array to get final answer
+Approach: Store the order in a dictionary. Then, for every character of s, add it to
+the array according to the input order. Join the array to get the final answer
 '''

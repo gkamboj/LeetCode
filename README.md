@@ -113,11 +113,13 @@ Collection of LeetCode questions
 | [0791-custom-sort-string](https://github.com/gkamboj/LeetCode/tree/master/0791-custom-sort-string) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1208-get-equal-substrings-within-budget](https://github.com/gkamboj/LeetCode/tree/master/1208-get-equal-substrings-within-budget) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/gkamboj/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
+| [1208-get-equal-substrings-within-budget](https://github.com/gkamboj/LeetCode/tree/master/1208-get-equal-substrings-within-budget) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 ## Union Find
 |  |
@@ -232,6 +234,7 @@ Collection of LeetCode questions
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1208-get-equal-substrings-within-budget](https://github.com/gkamboj/LeetCode/tree/master/1208-get-equal-substrings-within-budget) |
 ## Greedy
 |  |
 | ------- |
@@ -260,6 +263,7 @@ Collection of LeetCode questions
 | [0003-longest-substring-without-repeating-characters](https://github.com/gkamboj/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/gkamboj/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
+| [1208-get-equal-substrings-within-budget](https://github.com/gkamboj/LeetCode/tree/master/1208-get-equal-substrings-within-budget) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 ## Design
 |  |

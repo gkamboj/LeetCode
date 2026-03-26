@@ -13,6 +13,12 @@ class Solution:
         rootVal = preorder[0]
         inorderIndex = inorder.index(rootVal)
         root = TreeNode(rootVal)
-        root.left = self.buildTree(preorder[1:inorderIndex+1], inorder[:inorderIndex])
+        root.left = self.buildTree(preorder[1:inorderIndex + 1], inorder[:inorderIndex]) # pre[0] is root, so starting preorder from 1 index
         root.right = self.buildTree(preorder[inorderIndex + 1:], inorder[inorderIndex + 1:])
         return root
+
+'''
+Approach: Recursive - First value of preorder array is root, and values left of this root value in 
+inorder array are nodes of left subtree, whereas values on right are right subtree. Repeat this 
+recursively to create the tree. For terminal/base condition, return when length of input arrays <= 1.
+'''

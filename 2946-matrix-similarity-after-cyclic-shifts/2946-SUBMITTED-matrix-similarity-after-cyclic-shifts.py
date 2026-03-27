@@ -13,4 +13,7 @@ class Solution:
                 return False
         
         return True
-            
+
+'''
+Approach: Rotate each row as per given constraints and return if any mismatch is encountered.
+'''

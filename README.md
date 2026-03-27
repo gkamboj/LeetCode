@@ -52,6 +52,7 @@ Collection of LeetCode questions
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Hash Table
 |  |
 | ------- |
@@ -218,6 +219,7 @@ Collection of LeetCode questions
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/gkamboj/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Binary Search
 |  |
 | ------- |
@@ -294,6 +296,7 @@ Collection of LeetCode questions
 | [0268-missing-number](https://github.com/gkamboj/LeetCode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/gkamboj/LeetCode/tree/master/0371-sum-of-two-integers) |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -320,6 +323,7 @@ Collection of LeetCode questions
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
 | [0735-asteroid-collision](https://github.com/gkamboj/LeetCode/tree/master/0735-asteroid-collision) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
+| [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Data Stream
 |  |
 | ------- |

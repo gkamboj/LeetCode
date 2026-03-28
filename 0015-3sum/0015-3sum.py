@@ -3,20 +3,20 @@ class Solution:
         nums.sort()
         result = []
         for ind in range(len(nums) - 2):
-            val = nums[ind]
-            if ind > 0 and val == nums[ind - 1]:
+            if ind > 0 and nums[ind] == nums[ind - 1]:
                 continue
-            start, end, target = ind + 1, len(nums) - 1, -1 * val
+            start, end, target = ind + 1, len(nums) - 1, -nums[ind]
             while start < end:
-                start_val, end_val = nums[start], nums[end]
-                if start_val + end_val == target:
-                    result.append([val, start_val, end_val])
-                    while start < end and start_val == nums[start]:
+                v1, v2 = nums[start], nums[end]
+                if v1 + v2 == target:
+                    result.append([v1, v2, -target])
+                    while start < end and nums[start] == v1:
                         start += 1
-                    while start < end and end_val == nums[end]:
+                    while start < end and nums[end] == v2:
                         end -= 1
-                elif start_val + end_val > target:
+                elif v1 + v2 > target:
                     end -= 1
                 else:
                     start += 1
-        return list(result)
+        return result
+

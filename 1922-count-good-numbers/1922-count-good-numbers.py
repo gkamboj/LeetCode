@@ -13,3 +13,8 @@ class Solution:
             exp //= 2
             base = (base * base) % mod
         return result
+
+'''
+Approach: Due to high value, directly taking power (using **) will result in TLE.
+Use updated power method to avoid that.
+'''

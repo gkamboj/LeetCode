@@ -14,3 +14,8 @@ class Solution:
         result = triangle[i][j] + min(self.helper(triangle, i + 1, j, store), self.helper(triangle, i + 1, j + 1, store))
         store[key] = result
         return result
+
+'''
+Approach: Use top-down DP (memoization) to recursively compute the minimum path sum.
+Cache results for each (i, j) to avoid recomputation of overlapping subproblems and TLE.
+'''

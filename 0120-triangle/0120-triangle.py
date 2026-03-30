@@ -1,23 +1,16 @@
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         store = {}
-        return self.helper(triangle, store, 0, 0)
+        return self.helper(triangle, 0, 0, store)
 
-    def helper(self, triangle, store, ind1, ind2):
-        if ind1 == len(triangle) - 1:
-            return triangle[ind1][ind2]
-        else:
+    def helper(self, triangle, i, j, store):
+        if (key := (i, j)) in store:
+            return store[key]
 
-            if (key := (ind1 + 1, ind2)) in store:
-                v1 = store[key]
-            else:
-                v1 = self.helper(triangle, store, ind1 + 1, ind2)
-                store[key] = v1
-
-            if (key := (ind1 + 1, ind2 + 1)) in store:
-                v2 = store[key]
-            else:
-                v2 = self.helper(triangle, store, ind1 + 1, ind2 + 1)
-                store[key] = v2
-            
-            return triangle[ind1][ind2] + min(v1, v2)
+        if i == len(triangle) - 1:
+            store[key] = triangle[i][j]
+            return store[key]
+        
+        result = triangle[i][j] + min(self.helper(triangle, i + 1, j, store), self.helper(triangle, i + 1, j + 1, store))
+        store[key] = result
+        return result

@@ -52,6 +52,7 @@ Collection of LeetCode questions
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
+| [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 | [2013-detect-squares](https://github.com/gkamboj/LeetCode/tree/master/2013-detect-squares) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Hash Table
@@ -221,6 +222,7 @@ Collection of LeetCode questions
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/gkamboj/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Binary Search
 |  |
@@ -416,6 +418,7 @@ Collection of LeetCode questions
 | [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 ## String Matching
 |  |
 | ------- |

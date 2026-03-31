@@ -6,15 +6,13 @@ class Solution:
             for j, val in enumerate(row):
                 if val:
                     temp.append(0)
-                    queue.append((i, j))
+                    queue.append((i, j, 0))
                 else:
                     temp.append(-1)
             result.append(temp)
 
-        print(queue)
         while queue:
-            i, j = queue.popleft()
-            val = result[i][j]
+            i, j, val = queue.popleft()
             self.update_matrix(result, queue, i - 1, j, val)
             self.update_matrix(result, queue, i + 1, j, val)
             self.update_matrix(result, queue, i, j - 1, val)
@@ -26,4 +24,4 @@ class Solution:
     def update_matrix(self, matrix, queue, i, j, val):
         if 0 <= i < len(matrix) and 0 <= j < len(matrix[0]) and matrix[i][j] == -1:
             matrix[i][j] = val + 1
-            queue.append((i, j))
+            queue.append((i, j, val + 1))

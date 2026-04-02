@@ -16,7 +16,7 @@ class Solution:
 
 '''
 Approach: 
-- Return False if there is node (param root) is None, since this means while have reached beyond leaf without reaching target
-- If node is leaf node, return result based on targetSum
-- Else recursively call for left and right node by subtracting node's sum from targetSum
+- Return False if the node (param root) is None, since this means we have reached beyond the leaf without reaching the target.
+- If the node is a leaf node, return the result based on the targetSum.
+- Else recursively call for the left and right nodes by subtracting the node's sum from targetSum.
 '''

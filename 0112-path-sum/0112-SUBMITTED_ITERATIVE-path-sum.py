@@ -23,7 +23,7 @@ class Solution:
         return False
 
 '''
-Approach: Keep a stack to store node as well as remaining sum till node. After every pop, if the
-current node is leaf node and no sum is remaining, return True. Else continue. If stack becomes
-empty (means all paths have been checked), return False.
+Approach: Keep a stack to store the node as well as the remaining sum till the node. After every pop, if the
+current node is a leaf node and no sum is remaining, return True. Else continue. If the stack becomes empty
+(meaning all paths have been checked), return False.
 '''

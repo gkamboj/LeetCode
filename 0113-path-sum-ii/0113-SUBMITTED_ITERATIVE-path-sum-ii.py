@@ -21,3 +21,8 @@ class Solution:
                 stack.append((node.right, path + [node.right.val], remaining - node.right.val))
         
         return result
+
+'''
+Approach: Similar to LC-112. Keep node, path till now, and remaining sum in the stack. If the popped item
+is a leaf node and no sum is remaining, add to the result. Keep doing till all nodes are covered.
+'''

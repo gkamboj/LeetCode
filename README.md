@@ -42,6 +42,7 @@ Collection of LeetCode questions
 | [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/gkamboj/LeetCode/tree/master/0621-task-scheduler) |
 | [0704-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0704-binary-search) |
+| [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0735-asteroid-collision](https://github.com/gkamboj/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/gkamboj/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0792-binary-search) |
@@ -80,6 +81,7 @@ Collection of LeetCode questions
 | [0424-longest-repeating-character-replacement](https://github.com/gkamboj/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/gkamboj/LeetCode/tree/master/0621-task-scheduler) |
+| [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0791-custom-sort-string](https://github.com/gkamboj/LeetCode/tree/master/0791-custom-sort-string) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -97,6 +99,7 @@ Collection of LeetCode questions
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/gkamboj/LeetCode/tree/master/0621-task-scheduler) |
+| [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0791-custom-sort-string](https://github.com/gkamboj/LeetCode/tree/master/0791-custom-sort-string) |
 | [0853-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0853-car-fleet) |
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
@@ -116,6 +119,7 @@ Collection of LeetCode questions
 | [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/gkamboj/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/gkamboj/LeetCode/tree/master/0567-permutation-in-string) |
+| [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0791-custom-sort-string](https://github.com/gkamboj/LeetCode/tree/master/0791-custom-sort-string) |
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -440,4 +444,8 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
+## Trie
+|  |
+| ------- |
+| [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 <!---LeetCode Topics End-->

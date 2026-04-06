@@ -2,6 +2,8 @@ class Solution:
     def longestWord(self, words: List[str]) -> str:
         ans = ''
         words_set, pre = set(words), set()
+
+        words.sort()
         
         for word in words:
             if len(word) > len(ans) or (len(word) == len(ans) and word < ans):

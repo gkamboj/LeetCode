@@ -13,17 +13,15 @@ class Solution:
             9: [2, 4]
         }
         
-        ans = 0
+        ans, cache = 0, {}
         for num in range(10):
-            ans = (ans + self.helper(possible_moves, n - 1, num, {})) % (10 ** 9 + 7)
+            ans = (ans + self.helper(possible_moves, n - 1, num, cache)) % (10 ** 9 + 7)
         
         return ans
 
     def helper(self, possible_moves, n, curr, cache):
         if not n:
             return 1
-        if not possible_moves[curr]:
-            return 0
         
         ans = 0
         if (curr, n) in cache:
@@ -33,3 +31,8 @@ class Solution:
         cache[(curr, n)] = ans
 
         return ans
+
+'''
+Approach: Recursive DFS (top-down DP). FOr each digit, explore all valid moves recursively.
+Use memoization to avoid recomputation and TLE.
+'''

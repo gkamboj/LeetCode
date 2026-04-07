@@ -265,6 +265,7 @@ Collection of LeetCode questions
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0338-counting-bits](https://github.com/gkamboj/LeetCode/tree/master/0338-counting-bits) |
 | [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
+| [0935-knight-dialer](https://github.com/gkamboj/LeetCode/tree/master/0935-knight-dialer) |
 ## Monotonic Stack
 |  |
 | ------- |

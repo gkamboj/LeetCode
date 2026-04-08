@@ -124,6 +124,7 @@ Collection of LeetCode questions
 | [0981-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1023-time-based-key-value-store](https://github.com/gkamboj/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1208-get-equal-substrings-within-budget](https://github.com/gkamboj/LeetCode/tree/master/1208-get-equal-substrings-within-budget) |
+| [2490-circular-sentence](https://github.com/gkamboj/LeetCode/tree/master/2490-circular-sentence) |
 ## Prefix Sum
 |  |
 | ------- |

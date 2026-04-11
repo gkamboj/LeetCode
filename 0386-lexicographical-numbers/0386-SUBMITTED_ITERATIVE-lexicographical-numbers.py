@@ -16,8 +16,8 @@ class Solution:
 '''
 Approach: Official LC iterative solution.
 - Iterate a loop of size n
-- Multiply the curr with 10 if it is within limit
-- Else, keep dividing curr by 10 if it ends with 9 (as next after 119 should 12, not 120)
+- Multiply the curr with 10 if it is within the limit
+- Else, keep dividing curr by 10 if it ends with 9 (as next after 119 should be 12, not 120)
 or out of the limit.
-- Increment curr with 1 to cotinue the cycle
+- Increment curr with 1 to continue the cycle
 '''

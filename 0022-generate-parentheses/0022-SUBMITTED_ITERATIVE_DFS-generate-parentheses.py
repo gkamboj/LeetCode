@@ -23,6 +23,6 @@ Approach: Iterative DFS
 - Use a stack to simulate recursion (LIFO).
 - Pop a state → expand it → push next states.
 - Go deep along one path first, then backtrack.
-- It's DFS as we are following LIFO, that is, going deep as possible down one branch before trying others.
-- The only difference from the iterative BFS submission is that we use FIFO there (using a queue) to process a level before going in further depth.
+- It's DFS as we are following LIFO, that is, going as deep as possible down one branch before trying others.
+- The only difference from the iterative BFS submission is that we use FIFO there (using a queue) to process a level before going further in depth.
 '''

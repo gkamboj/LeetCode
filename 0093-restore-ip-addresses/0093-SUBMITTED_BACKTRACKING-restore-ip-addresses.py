@@ -31,6 +31,7 @@ class Solution:
 
 '''
 Approach: Backtracking
-Backtrack with a start pointer, trying segment lengths 1–3 at each step. Prune if remaining characters don't fit in remaining parts.
+Backtrack with a start pointer, trying segment lengths 1–3 at each step. Prune if the remaining characters don't fit in the remaining parts.
 Break (not continue) on leading zero or segment > "255" since longer lengths will also be invalid.
+This is better than the other backtracking approach, as this avoids unnecessary memory allocation at every recursion node.
 '''

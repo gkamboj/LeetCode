@@ -1,6 +1,6 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        candidates.sort()
+        # candidates.sort()
         result = []
         self.helper(candidates, [], 0, target, result)
         return result
@@ -12,7 +12,7 @@ class Solution:
         
         for ind in range(start, len(candidates)):
             if (candidate := candidates[ind]) > target:
-                break
+                continue
             combo.append(candidate)
             self.helper(candidates, combo, ind, target - candidate, result)
             combo.pop()

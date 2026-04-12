@@ -8,10 +8,15 @@ class Solution:
         if not close:
             result.append(combo)
             return
-        elif not opn:
-            self.helper(combo + ')', opn, close - 1, result)
-        elif opn == close:
+        
+        if opn > 0:
             self.helper(combo + '(', opn - 1, close, result)
-        else:
+        if close > opn:
             self.helper(combo + ')', opn, close - 1, result)
-            self.helper(combo + '(', opn - 1, close, result)
+
+'''
+Approach: Backtracking
+- Use backtracking with two counters: open and close remaining.
+- Add '(' if open > 0, add ')' if close > open (to keep it valid).
+- When both become 0 → add the built string to result.
+'''

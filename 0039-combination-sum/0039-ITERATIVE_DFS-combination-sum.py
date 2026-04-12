@@ -21,10 +21,10 @@ class Solution:
 
 '''
 Approach: Iterative DFS
-- Use a stack to process states (combo, index, target) in depth-first manner (LIFO).
-- Pop a state → try all candidates from current index onward.
+- Use a stack to process states (combo, index, target) in a depth-first manner (LIFO).
+- Pop a state → try all candidates from the current index onward.
 - Push new states with updated combo and reduced target into the stack.
-- Add to result when target becomes 0.
+- Add to the result when the target becomes 0.
 - Sorting helps prune: if candidate > target → break early.
 - It's DFS as we go deep into one combination before exploring others (due to LIFO order).
 - The only difference from the iterative BFS approach is that here we use LIFO (stack) to go deep into one combination before processing others, whereas BFS 
@@ -33,6 +33,6 @@ uses FIFO (queue) to explore all partial combinations level by level.
 - Not very efficient:
   - Still creates new lists at every step (`combo + [candidate]`).
   - More overhead compared to backtracking (no in-place modification).
-  - Stack can still grow large, though usually smaller than BFS queue.
+  - Stack can still grow large, though usually smaller than the BFS queue.
   - Recursive backtracking DFS is preferred as it is more space-efficient (uses append/pop) and avoids repeated copying.
 '''

@@ -18,5 +18,5 @@ class Solution:
 Approach: Backtracking
 - Use backtracking with two counters: open and close remaining.
 - Add '(' if open > 0, add ')' if close > open (to keep it valid).
-- When both become 0 → add the built string to result.
+- When both become 0 → add the built string to the result.
 '''

@@ -22,8 +22,8 @@ class Solution:
 Approach: Iterative BFS
 - Use a queue to process states level by level (FIFO).
 - Pop a state → add all its next states to the queue.
-- Explore all states at current depth before going deeper.
-- Add to result if all parentheses have been taken care of.
-- It's BFS as we are following FIFO, that is exploring all nodes at a level before adding new.
-- Only difference from iterative DFS submission is, we use LIFO there using stack to go in depth before processing others.
+- Explore all states at the current depth before going deeper.
+- Add to the result if all parentheses have been taken care of.
+- It's BFS as we are following FIFO, that is, exploring all nodes at a level before adding new ones.
+- The only difference from the iterative DFS submission is that we use LIFO there (using a stack) to go in depth before processing others.
 '''

@@ -1,15 +1,17 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         result = []
-        self.helper(result, n, n, '')
+        self.helper('', n, n, result)
         return result
 
-    def helper(self, result, start, end, val):
-        if not end:
-            result.append(val)
-        elif not start:
-            self.helper(result, start, end - 1, val + ')')
+    def helper(self, combo, opn, close, result):
+        if not close:
+            result.append(combo)
+            return
+        elif not opn:
+            self.helper(combo + ')', opn, close - 1, result)
+        elif opn == close:
+            self.helper(combo + '(', opn - 1, close, result)
         else:
-            self.helper(result, start - 1, end, val + '(')
-            if start < end:
-                self.helper(result, start, end - 1, val + ')')
+            self.helper(combo + ')', opn, close - 1, result)
+            self.helper(combo + '(', opn - 1, close, result)

@@ -16,7 +16,9 @@ class Solution:
             
 '''
 Approach: Backtracking DFS with swapping
-- Fix one index at a time by swapping current element with all possible choices.  
+- Fix one index at a time by swapping the current element with all possible choices.  
 - Recurse for next index, then swap back to restore state.  
-- Avoids extra space (no used array, no new lists).  
+- Avoids extra space.
+
+Refer to the video for details: https://youtu.be/f2ic2Rsc9pU
 '''

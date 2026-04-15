@@ -27,6 +27,7 @@ Collection of LeetCode questions
 | [0073-set-matrix-zeroes](https://github.com/gkamboj/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/gkamboj/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/gkamboj/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0120-triangle](https://github.com/gkamboj/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -120,6 +121,7 @@ Collection of LeetCode questions
 | [0022-generate-parentheses](https://github.com/gkamboj/LeetCode/tree/master/0022-generate-parentheses) |
 | [0043-multiply-strings](https://github.com/gkamboj/LeetCode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/gkamboj/LeetCode/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0093-restore-ip-addresses](https://github.com/gkamboj/LeetCode/tree/master/0093-restore-ip-addresses) |
 | [0125-valid-palindrome](https://github.com/gkamboj/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/gkamboj/LeetCode/tree/master/0242-valid-anagram) |
@@ -236,6 +238,7 @@ Collection of LeetCode questions
 | [0054-spiral-matrix](https://github.com/gkamboj/LeetCode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/gkamboj/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Binary Search
@@ -307,6 +310,7 @@ Collection of LeetCode questions
 | [0040-combination-sum-ii](https://github.com/gkamboj/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/gkamboj/LeetCode/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/gkamboj/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0093-restore-ip-addresses](https://github.com/gkamboj/LeetCode/tree/master/0093-restore-ip-addresses) |
 | [0113-path-sum-ii](https://github.com/gkamboj/LeetCode/tree/master/0113-path-sum-ii) |
 ## Math
@@ -419,6 +423,7 @@ Collection of LeetCode questions
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/gkamboj/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/gkamboj/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/gkamboj/LeetCode/tree/master/0101-symmetric-tree) |

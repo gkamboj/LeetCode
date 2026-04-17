@@ -17,7 +17,7 @@ class Solution:
 
         orig, board[i][j] = board[i][j], '.'
         ans = (
-            self.helper(board, i - 1, j, word, ind + 1) or
+            self.helper(board, i - 1, j, word, ind + 1) or # use ind instead of word[1:] to prevent slicing everytime
             self.helper(board, i + 1, j, word, ind + 1) or
             self.helper(board, i, j - 1, word, ind + 1) or
             self.helper(board, i, j + 1, word, ind + 1)
@@ -25,3 +25,12 @@ class Solution:
         board[i][j] = orig
         
         return ans
+
+'''
+Approach: Backtracking + DFS
+- For every cell, explore 4 directions, and mark visited in-place and restore after recursion.
+- Track progress with index parameter (ind)
+- Optionals that could be added to solution:
+    - Prune early: if board character counts can’t cover the word, return False immediately.
+    - Reverse the word to start from the rarer character if if frequence of first character is higher → reduces branching.
+'''

@@ -32,9 +32,9 @@ class Solution:
 
 '''
 Approach: Backtracking + Memoization (Top-down DP)
-- Use DFS to generate all partitions. At each step, try every substring starting at current index.
+- Use DFS to generate all partitions. At each step, try every substring starting at the current index.
 - Use a cache (i, j) → True/False to avoid recomputing palindrome checks.
-- Only recurse when substring is palindrome; build path and backtrack.
+- Only recurse when the substring is a palindrome; build a path and backtrack.
 
 Time: ~O(n² + 2ⁿ)
 Space: O(n²) cache + recursion stack.

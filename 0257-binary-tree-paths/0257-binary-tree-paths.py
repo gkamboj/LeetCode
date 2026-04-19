@@ -6,20 +6,26 @@
 #         self.right = right
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
-        queue, ans = deque([[root]]), []
+        queue, ans = deque([(root, str(root.val))]), []
         
         while queue:
             temp = deque()
             while queue:
-                path = queue.popleft()
-                last = path[-1]
-                if not last.left and not last.right:
+                node, path = queue.popleft()
+                if not node.left and not node.right:
                     ans.append(path)
                 else:
-                    if last.left:
-                        temp.append(path + [last.left])
-                    if last.right:
-                        temp.append(path + [last.right])
+                    if node.left:
+                        temp.append((node.left, path + '->' + str(node.left.val)))
+                    if node.right:
+                        temp.append((node.right, path + '->' + str(node.right.val)))
             queue = temp
         
-        return ['->'.join([str(node.val) for node in path]) for path in ans]
+        return ans
+
+'''
+Approach: Iterative BFS
+- Use a queue for BFS storing (node, path_string).
+- Start with (root, str(root.val)), and for each node, append children with "->" concatenation.
+- When a leaf node is reached, add its path string to the `ans`.
+'''

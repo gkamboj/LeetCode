@@ -5,7 +5,6 @@ class Solution:
         for ind, char in enumerate(s):
             while char in mp and mp[char] >= start:
                 start += 1
-            mp[s[start]] = start
             mp[char] = ind
             ans = max(ans, ind - start + 1)
 

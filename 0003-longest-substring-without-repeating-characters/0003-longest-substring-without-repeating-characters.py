@@ -1,9 +1,12 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        start, ans, curr = 0, 0, {}
+        mp, start, ans = {}, 0, 0
+        
         for ind, char in enumerate(s):
-            if char in curr and start <= curr[char]:
-                start = curr[char] + 1
+            while char in mp and mp[char] >= start:
+                start += 1
+            mp[s[start]] = start
+            mp[char] = ind
             ans = max(ans, ind - start + 1)
-            curr[char] = ind
+
         return ans

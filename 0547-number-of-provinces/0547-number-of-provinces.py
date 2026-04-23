@@ -4,8 +4,8 @@ class Solution:
         graph = [[] for i in range(n)]
 
         for i in range(n):
-            for j in range(n):
-                if i != j and isConnected[i][j]:
+            for j in range(i + 1, n):
+                if isConnected[i][j]:
                     graph[i].append(j)
                     graph[j].append(i)
 
@@ -25,3 +25,13 @@ class Solution:
                             visited[node] = 1
         
         return ans
+
+'''
+Approach: BFS using adjacency list
+- Convert the given adjacency matrix into an undirected adjacency list, ensuring each edge is added once (using j = i+1) but in both directions.
+- Traverse all nodes, and for every unvisited node, run BFS to mark all reachable nodes.
+- Each BFS traversal represents one connected component (province).
+
+- Time Complexity: O(n²) (due to matrix traversal), 
+- Space Complexity: O(n²) (adj list in dense graph).
+'''

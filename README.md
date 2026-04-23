@@ -355,6 +355,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -450,6 +451,7 @@ Collection of LeetCode questions
 | [0257-binary-tree-paths](https://github.com/gkamboj/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0386-lexicographical-numbers](https://github.com/gkamboj/LeetCode/tree/master/0386-lexicographical-numbers) |
 | [0543-diameter-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0669-trim-a-binary-search-tree](https://github.com/gkamboj/LeetCode/tree/master/0669-trim-a-binary-search-tree) |
@@ -465,6 +467,7 @@ Collection of LeetCode questions
 | [0112-path-sum](https://github.com/gkamboj/LeetCode/tree/master/0112-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/gkamboj/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
@@ -481,4 +484,8 @@ Collection of LeetCode questions
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/gkamboj/LeetCode/tree/master/0386-lexicographical-numbers) |
 | [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
+## Graph Theory
+|  |
+| ------- |
+| [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 <!---LeetCode Topics End-->

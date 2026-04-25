@@ -48,6 +48,7 @@ Collection of LeetCode questions
 | [0347-top-k-frequent-elements](https://github.com/gkamboj/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/gkamboj/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/gkamboj/LeetCode/tree/master/0621-task-scheduler) |
+| [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/gkamboj/LeetCode/tree/master/0704-binary-search) |
 | [0720-longest-word-in-dictionary](https://github.com/gkamboj/LeetCode/tree/master/0720-longest-word-in-dictionary) |
 | [0735-asteroid-collision](https://github.com/gkamboj/LeetCode/tree/master/0735-asteroid-collision) |
@@ -245,6 +246,7 @@ Collection of LeetCode questions
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Binary Search
@@ -359,6 +361,7 @@ Collection of LeetCode questions
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
+| [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -459,6 +462,7 @@ Collection of LeetCode questions
 | [0572-subtree-of-another-tree](https://github.com/gkamboj/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0669-trim-a-binary-search-tree](https://github.com/gkamboj/LeetCode/tree/master/0669-trim-a-binary-search-tree) |
+| [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 | [1367-linked-list-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1367-linked-list-in-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
@@ -474,6 +478,7 @@ Collection of LeetCode questions
 | [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 ## String Matching

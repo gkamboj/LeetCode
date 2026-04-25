@@ -25,3 +25,11 @@ class Solution:
                             grid[i][j - 1] = '-1'
         
         return ans
+
+'''
+Approach: BFS
+- Traverse grid using nested loops; start BFS whenever an unvisited land cell ('1') is found.
+- Use BFS to explore all 4-directionally connected land cells.
+- Mark cells as visited at the time of enqueueing (instead of doing so after popping from queue) to avoid duplicate processing.
+- Time: O(m × n), Space: O(m × n) (queue in worst case).
+'''

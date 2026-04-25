@@ -25,8 +25,8 @@ class Solution:
 
 '''
 Approach: BFS
-- Traverse grid; for each land cell, run BFS to explore entire island.
-- Count number of cells visited during BFS as area.
+- Traverse the grid; for each land cell, run BFS to explore the entire island.
+- Count the number of cells visited during BFS as the area.
 - Track maximum area across all islands.
 
 - Time: O(m × n), Space: O(m × n)

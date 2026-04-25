@@ -1,23 +1,27 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        ans = 0
-        for row in range(len(grid)):
-            for col in range(len(grid[0])):
+        ans, m, n = 0, len(grid), len(grid[0])
+
+        for row in range(m):
+            for col in range(n):
                 if grid[row][col] == '1':
-                    self.dfs(grid, row, col)
                     ans += 1
-        return ans
-    
-    
-    def dfs(self, grid, row, col):
-        if (not 0 <= row < len(grid)) or (not 0 <= col < len(grid[0])) or grid[row][col] != '1':
-            return
-        grid[row][col] = '#'
-        self.dfs(grid, row - 1, col)
-        self.dfs(grid, row + 1, col)
-        self.dfs(grid, row, col - 1)
-        self.dfs(grid, row, col + 1)
+                    
+                    queue = deque([(row, col)])
+                    grid[row][col] = '-1'
+                    while queue:
+                        i, j = queue.popleft()
+                        if i + 1 < m and grid[i + 1][j] == '1':
+                            queue.append((i + 1, j))
+                            grid[i + 1][j] = '-1'
+                        if j + 1 < n and grid[i][j + 1] == '1':
+                            queue.append((i, j + 1))
+                            grid[i][j + 1] = '-1'
+                        if i > 0 and grid[i - 1][j] == '1':
+                            queue.append((i - 1, j))
+                            grid[i - 1][j] = '-1'
+                        if j > 0 and grid[i][j - 1] == '1':
+                            queue.append((i, j - 1))
+                            grid[i][j - 1] = '-1'
         
-'''
-Approach: This is DFS approach inspired by https://leetcode.com/problems/number-of-islands/discuss/56340/Python-Simple-DFS-Solution
-'''
+        return ans

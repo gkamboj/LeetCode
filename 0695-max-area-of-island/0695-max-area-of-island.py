@@ -1,6 +1,7 @@
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         ans, rows, cols = 0, len(grid), len(grid[0])
+        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
         for i in range(rows):
             for j in range(cols):
@@ -11,13 +12,22 @@ class Solution:
 
                     while queue:
                         row, col = queue.popleft()
-                        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
-                        for k, l in directions:
-                            if 0 <= row + k < rows and 0 <= col + l < cols and grid[row + k][col + l] == 1:
-                                grid[row + k][col + l] = -1
+
+                        for rdiff, cdiff in directions:
+                            if 0 <= row + rdiff < rows and 0 <= col + cdiff < cols and grid[row + rdiff][col + cdiff] == 1:
+                                grid[row + rdiff][col + cdiff] = -1
                                 area += 1
-                                queue.append((row + k, col + l))
+                                queue.append((row + rdiff, col + cdiff))
                     
                     ans = max(ans, area)
 
         return ans
+
+'''
+Approach: BFS
+- Traverse grid; for each land cell, run BFS to explore entire island.
+- Count number of cells visited during BFS as area.
+- Track maximum area across all islands.
+
+- Time: O(m × n), Space: O(m × n)
+'''

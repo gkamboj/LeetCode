@@ -33,6 +33,7 @@ Collection of LeetCode questions
 | [0120-triangle](https://github.com/gkamboj/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/gkamboj/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0130-surrounded-regions](https://github.com/gkamboj/LeetCode/tree/master/0130-surrounded-regions) |
 | [0134-gas-station](https://github.com/gkamboj/LeetCode/tree/master/0134-gas-station) |
 | [0136-single-number](https://github.com/gkamboj/LeetCode/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/gkamboj/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -246,6 +247,7 @@ Collection of LeetCode questions
 | [0073-set-matrix-zeroes](https://github.com/gkamboj/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/gkamboj/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
+| [0130-surrounded-regions](https://github.com/gkamboj/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
 | [0994-rotting-oranges](https://github.com/gkamboj/LeetCode/tree/master/0994-rotting-oranges) |
@@ -361,6 +363,7 @@ Collection of LeetCode questions
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/gkamboj/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0130-surrounded-regions](https://github.com/gkamboj/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 | [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
@@ -452,6 +455,7 @@ Collection of LeetCode questions
 | [0110-balanced-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0112-path-sum](https://github.com/gkamboj/LeetCode/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/gkamboj/LeetCode/tree/master/0113-path-sum-ii) |
+| [0130-surrounded-regions](https://github.com/gkamboj/LeetCode/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/gkamboj/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |
@@ -475,6 +479,7 @@ Collection of LeetCode questions
 | [0102-binary-tree-level-order-traversal](https://github.com/gkamboj/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/gkamboj/LeetCode/tree/master/0112-path-sum) |
+| [0130-surrounded-regions](https://github.com/gkamboj/LeetCode/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/gkamboj/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0226-invert-binary-tree) |

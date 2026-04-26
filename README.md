@@ -59,6 +59,7 @@ Collection of LeetCode questions
 | [0883-car-fleet](https://github.com/gkamboj/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/gkamboj/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0973-k-closest-points-to-origin](https://github.com/gkamboj/LeetCode/tree/master/0973-k-closest-points-to-origin) |
+| [0994-rotting-oranges](https://github.com/gkamboj/LeetCode/tree/master/0994-rotting-oranges) |
 | [1046-last-stone-weight](https://github.com/gkamboj/LeetCode/tree/master/1046-last-stone-weight) |
 | [1094-car-pooling](https://github.com/gkamboj/LeetCode/tree/master/1094-car-pooling) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/gkamboj/LeetCode/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
@@ -247,6 +248,7 @@ Collection of LeetCode questions
 | [0079-word-search](https://github.com/gkamboj/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/gkamboj/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/gkamboj/LeetCode/tree/master/0994-rotting-oranges) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/gkamboj/LeetCode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 ## Binary Search
@@ -479,6 +481,7 @@ Collection of LeetCode questions
 | [0547-number-of-provinces](https://github.com/gkamboj/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/gkamboj/LeetCode/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/gkamboj/LeetCode/tree/master/0994-rotting-oranges) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/gkamboj/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1765-map-of-highest-peak](https://github.com/gkamboj/LeetCode/tree/master/1765-map-of-highest-peak) |
 ## String Matching

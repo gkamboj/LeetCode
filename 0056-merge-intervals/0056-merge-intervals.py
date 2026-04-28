@@ -5,7 +5,7 @@ class Solution:
 
         while ind < len(intervals):
             curr = intervals[ind]
-            if curr[0] <= prev[1] <= curr[1] or curr[1] < prev[1]:
+            if curr[0] <= prev[1]:
                 prev[1] = max(curr[1], prev[1])
             else:
                 ans.append(prev)
